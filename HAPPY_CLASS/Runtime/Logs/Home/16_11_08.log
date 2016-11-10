@@ -655,14 +655,146 @@ ERR: 非法操作:css
 [ 2016-11-08T19:28:57+08:00 ] ::1 /happy_class/index.php/home/index/video/1.mp4
 ERR: 非法操作:video
 
-[ 2016-11-08T21:28:45+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+[ 2016-11-08T19:35:32+08:00 ] ::1 /happy_class/index.php/home/index/video/1.mp4
+ERR: 非法操作:video
+
+[ 2016-11-08T19:48:22+08:00 ] ::1 /happy_class/index.php/home/index/video/1.mp4
+ERR: 非法操作:video
+
+[ 2016-11-08T19:50:58+08:00 ] ::1 /happy_class/index.php/home/index/%7BU:('Home/index/getClass')%7D
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001712s ]
-SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0559s ]
-SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0044s ]
-SQL: INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('软件一班','回家那个','http://oga3de3p0.bkt.clouddn.com/FmLpplRxhEsmt_q1nCbT4lyUOdib','http://oga3de3p0.bkt.clouddn.com/FgtXXppVedigRpgGFHouNHuXX61r','http://oga3de3p0.bkt.clouddn.com/lo_k2Bp5mxOBHrzTj5VtcDd1XheD') [ RunTime:0.0017s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016337s ]
+ERR: 非法操作:{U:('Home
+
+[ 2016-11-08T20:42:50+08:00 ] ::1 /happy_class/index.php/home/index/%7BU:('Home/index/getClass')%7D
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020444s ]
+ERR: 非法操作:{U:('Home
+
+[ 2016-11-08T20:43:40+08:00 ] ::1 /happy_class/index.php/home/index/%7BU:('Home/index/getClass')%7D
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.024805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028830s ]
+ERR: 非法操作:{U:('Home
+
+[ 2016-11-08T20:46:25+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038880s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0749s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0007s ]
+
+[ 2016-11-08T21:18:43+08:00 ] ::1 /happy_class/index.php/home/index/video/1.mp4
+ERR: 非法操作:video
+
+[ 2016-11-08T21:19:51+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.051119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.058028s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0010s ]
+
+[ 2016-11-08T21:23:33+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016086s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0303s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0115s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('we\'g\'fe\'q\'g','d\'ge','http://oga3de3p0.bkt.clouddn.com/FuLVPjL2qP2d8Yauqi8gp9ZjRB7l','http://oga3de3p0.bkt.clouddn.com/Fg3KJ2KrFuly_W9lv9FAkDiuYZlN','http://oga3de3p0.bkt.clouddn.com/FqlW4dtb1UMDV2oTZ0457vYhs1HS') [ RunTime:0.0837s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001928s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002052s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009174s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009575s ]
+
+[ 2016-11-08T21:23:56+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.033946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.094157s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0009s ]
+
+[ 2016-11-08T21:24:00+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019742s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0005s ]
+
+[ 2016-11-08T21:24:28+08:00 ] ::1 /happy_class/index.php/home/index/video/1.mp4
+ERR: 非法操作:video
+
+[ 2016-11-08T21:54:14+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019325s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0498s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0289s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('软件6班','fdajdf','http://oga3de3p0.bkt.clouddn.com/Fg3KJ2KrFuly_W9lv9FAkDiuYZlN','http://oga3de3p0.bkt.clouddn.com/FqlW4dtb1UMDV2oTZ0457vYhs1HS','http://oga3de3p0.bkt.clouddn.com/FneVSaXLzWv1ieAmU3PLnAAvF0n5') [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009843s ]
+
+[ 2016-11-08T21:54:21+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017639s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0346s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0187s ]
+
+[ 2016-11-08T21:56:50+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017452s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.1318s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0681s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0009s ]
+
+[ 2016-11-08T22:00:28+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012027s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0282s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0008s ]
+
+[ 2016-11-08T22:01:19+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016399s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0480s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0157s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('ranuj','dfjasdfj','http://oga3de3p0.bkt.clouddn.com/Fr422AZaNE5UNFJ3QMLzuK7HgTU2','http://oga3de3p0.bkt.clouddn.com/FqlW4dtb1UMDV2oTZ0457vYhs1HS','http://oga3de3p0.bkt.clouddn.com/Fvfvw11yP4_XAo6BTMHa4h6lbEyw') [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013120s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013655s ]
+
+[ 2016-11-08T22:01:41+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019176s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0306s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0009s ]
+
+[ 2016-11-08T23:20:35+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012122s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0291s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0008s ]
+
+[ 2016-11-08T23:24:05+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012011s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0437s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0113s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0008s ]
 
