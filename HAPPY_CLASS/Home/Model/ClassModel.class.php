@@ -33,5 +33,14 @@ class ClassModel extends Model{
         $res=$class->select();
         return $res;
     }
+    /*
+     * 投票模型
+     * id 被投票班级id
+     */
+    public function vote($id){
+        $class=M('class');
+        $map['id']=$id;
+        $res=$class->where($map)->setInc('num',1);
+    }
 
 }

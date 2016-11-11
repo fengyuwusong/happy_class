@@ -32,11 +32,24 @@ class IndexController extends Controller {
         $video_key=I('post.video_key');
         $image_key=I('post.image_key');
         $origin=I('post.origin');
-        $cover=$origin . '/' . $cover_key;
-        $image=$origin . '/' . $image_key;
-        $video=$origin . '/' . $video_key;
-        $class=D('class');
-        $class->addClass($name,$info,$cover,$image,$video);
+        if($name==''||$info==''||$cover_key==''||$video_key==''||$image_key==''||$origin==''){
+            $res=array(
+                'Status'=>"1",
+                'Mes'=>"参数不能为空！"
+            );
+            $this->ajaxReturn($res);
+        }else {
+            $cover = $origin . '/' . $cover_key;
+            $image = $origin . '/' . $image_key;
+            $video = $origin . '/' . $video_key;
+            $class = D('class');
+            $class->addClass($name, $info, $cover, $image, $video);
+            $res=array(
+                'Status'=>"200",
+                'Mes'=>"添加成功！"
+            );
+            $this->ajaxReturn($res);
+        }
     }
 
     /*
@@ -51,8 +64,33 @@ class IndexController extends Controller {
         $data=$class->getClass();
         $res=array(
             'data'=>$data,
-            'Status'=>"200"
+            'Status'=>"200",
+            'Mes'=>"获取成功！"
         );
         $this->ajaxReturn($res);
+    }
+
+    /*
+     * 简单投票实现
+     * id 被投票班级id
+     * 返回
+     */
+    public function vote(){
+        $id=I('post.id');
+        if($id==''){
+            $res=array(
+                'Status'=>"1",
+                'Mes'=>"参数不能为空！"
+            );
+            $this->ajaxReturn($res);
+        }else {
+            $class = D('class');
+            $class->vote($id);
+            $res=array(
+                'Status'=>"200",
+                'Mes'=>"投票成功！"
+            );
+            $this->ajaxReturn($res);
+        }
     }
 }
