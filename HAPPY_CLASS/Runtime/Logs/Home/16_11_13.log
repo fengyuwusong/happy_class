@@ -1,3 +1,28 @@
+<<<<<<< HEAD
+[ 2016-11-13T15:47:24+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015626s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.2122s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0012s ]
+
+[ 2016-11-13T15:47:29+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017973s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0357s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0007s ]
+
+[ 2016-11-13T15:57:50+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010181s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0447s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0009s ]
+=======
 [ 2016-11-13T14:43:30+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
@@ -24,6 +49,7 @@ SQL: SELECT * FROM `tp_class`  [ RunTime:0.0003s ]
 
 [ 2016-11-13T15:27:35+08:00 ] ::1 /happy_class/index.php/home/index/getDanmu
 ERR: Think\Model:get_danmu方法不存在！
+>>>>>>> 8903f40862f7d20537d0c54a1d48329c09ff4d1a
 
 [ 2016-11-13T18:33:48+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
 INFO: [ app_begin ] --START--
