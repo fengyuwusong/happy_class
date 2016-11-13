@@ -61,6 +61,17 @@
 		    </div>
 		</div>
 	</div>
+	<div class="rule">
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+	</div>
+	<div class="section">
+		
+	</div>
 </div>
 </body>
 </html>
