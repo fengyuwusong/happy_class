@@ -3,12 +3,14 @@
 	padding: 0;
 
 }
+/*背景*/
 #bg{
 	background: url(../image/background.jpg) no-repeat;
 	background-size: 100%;
 	height: 100%;
 
 }
+/*轮播图*/
 .list{
 	background-color: rgb( 237, 120, 93 );
 	left: 0px;
@@ -17,49 +19,34 @@
 	height: 562px;
 	z-index: 113;
 }
-.charts {
-	width: 50%;
-	font-size: 192.653px;
-	font-family: "ProductSans";
-	color: rgb( 212, 63, 27 );
-	font-weight: bold;
-	line-height: 1.229;
-	z-index: 115;
-}
-.rank {
-	float: left;
-	font-size: 198.653px;
-	font-weight: initial;
-	font-family: "Microsoft YaHei";
-	color: rgb( 251, 251, 251 );
-	line-height: 1.229;
-	-moz-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
-	-webkit-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
-	-ms-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
-	z-index: 116;
-	Opacity:50;
-	margin-top:-146px;
-	margin-left: 12%;
-}
+/*坐标部分*/
 .xy{
 	clear: both;
 	width: 76%;
 	margin:0 auto;
 /*	margin-top:27%;
 */}
+/*坐标图*/
 .xy img{
 	width:100%;
 }
+/*charts*/
 .charts {
 	width: 50%;
+}
+/*charts文字*/
+.char{
+	width: 100%;
+	margin-left: 50px;
+	float:left;
 	font-size: 192.653px;
 	font-family: "ProductSans";
 	color: rgb( 212, 63, 27 );
 	font-weight: bold;
 	line-height: 1.229;
-	z-index: 115;
-	text-align: center;
+	position:relative;
 }
+/*排行版*/
 .rank {
 	float: left;
 	font-size: 198.653px;
@@ -74,14 +61,17 @@
 	Opacity:50;
 	margin-top:-146px;
 }
+/*坐标轴下10个班级*/
 .voted_classes{
 	width: 23px;
 }
+/*一个班级*/
 .voted_class{
 	margin-right:30px;
 	font-size: 30px;
 	text-align: center;
 }
+/*星空提供*/
 .offer{
 	width: 100%;
 	/*margin: 0 auto;*/
@@ -90,38 +80,31 @@
     color: rgb( 212, 63, 27 );
 	font-size: 30px;
 }
-.votespan {
+/*vote*/
+.votes {
 	width: 50%;
-	float:right;
+	float: right;
+}
+.votespan{
+	width: 100%;
+	position: absolute;
+	margin-right: 50px;
+	float:left;
 	font-size: 192.653px;
 	font-family: "ProductSans";
 	color: rgb( 212, 63, 27 );
 	font-weight: bold;
 	line-height: 1.229;
-	z-index: 115;
-	text-align: center;
 }
-.classrank {
-	float: right;
-	font-size: 169.653px;
-	font-weight: initial;
-	font-family: "Microsoft YaHei";
-	color: rgb( 251, 251, 251 );
-	line-height: 1.229;
-	-moz-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
-	-webkit-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
-	-ms-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
-	z-index: 116;
-	Opacity:50;
-	margin-top:-120px;
-	margin-right: 5%;
-}
+
+/*10个班级*/
 #classes{
 	clear: both;
 	width: 100%;
 	height: 637px;
 	margin:450px auto;
 }
+/*1个班级*/
 .class{
 	float: left;
 	width: 17.5%;
@@ -134,6 +117,7 @@
 #class1,#class6{
 	margin-left: 5%;
 }
+/*班级里的图*/
 .pic{
 	width:96%;
 	margin: 3px auto;
@@ -149,6 +133,7 @@
     -transform:scale(1.5,1.5);
      transition:all 0.5s; 
  }
+ /*班级*/
 .num{
 	width: 100%;
 	text-align: center;
@@ -164,9 +149,11 @@
 	line-height: 45px;
 	padding-top:100px;
 }
+/*开发人员*/
 .section{
 	height: 800px;
 }
+/*footer*/
 .footer{
 	width: 100%;
 	text-align: center;
@@ -174,15 +161,12 @@
 	font-size: 25px;
 	margin-bottom: 25px;
 }
-#hide{
+ /*隐藏层*/
+ #hide{
  	width: 70%;
  	height: 500px;
- 	margin: 0 auto;
+ 	/*margin: 0 auto;*/
  	position: absolute;
-	z-index: -1;
+	z-index:2;
 	background-color: red;
  }
-.char{
-	display: inline-block;
-	margin-left: 21%;
-}
