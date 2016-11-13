@@ -13,8 +13,6 @@ class IndexController extends Controller {
         $cover=getQiniu();//获取封面token
         $image=getQiniu();//获取宣传图token
         $video=getQiniu();//获取视频token
-//        $class=D("Class");
-//        $class->addClass();
         $this->assign('cover',$cover);
         $this->assign('image',$image);
         $this->assign('video',$video);
@@ -95,5 +93,38 @@ class IndexController extends Controller {
             );
             $this->ajaxReturn($res);
         }
+    }
+
+    /*
+     * 获取弹幕接口
+     */
+    public function getDanmu()
+    {
+        $Danmu = D("Danmu");
+        $res = $Danmu->getDanmu();
+        $first = 0;
+        $danmu = '[';
+        foreach ($res as $key => $val) {
+            if ($first) {
+                $danmu .= ",";
+            }
+            $first = 1;
+            $danmu .= "'" . $val['danmu'] . "'";
+        }
+        $danmu .= ']';
+        $danmu = str_replace("&quot;", '"', $danmu);
+        exit($danmu);
+    }
+
+    /*
+     * 添加弹幕接口
+     * $danmu json { text:"这是弹幕" ,color:"white",size:1,position:0,time:2}
+     */
+    public function addDanmu($danmu)
+    {
+        $danmu = I('post.danmu');
+        $Danmu = D("Danmu");
+        $Danmu->addDanmu($danmu);
+        exit($danmu);
     }
 }
