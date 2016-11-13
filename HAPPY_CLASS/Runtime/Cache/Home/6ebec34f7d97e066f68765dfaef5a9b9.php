@@ -61,6 +61,19 @@
 		    </div>
 		</div>
 	</div>
+	<div class="rule">
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+		<p>1.一个ip限投一次票</p>
+	</div>
+	<div class="section"></div>
+	<div class="footer">
+		Copyright&copy2006-2016星空学生创新中心</br>
+		www.xingkong.us
+	</div>
 </div>
 </body>
 </html>
