@@ -5,6 +5,9 @@ class IndexController extends Controller {
     public function index(){
         $this->display();
     }
+     public function index1(){
+        $this->display();
+    }
 
     public function admin(){
         $cover=getQiniu();//获取封面token

@@ -1,0 +1,62 @@
+*{
+	margin:0;
+	padding: 0;
+	background: url(../image/background.jpg);
+
+}
+.list{
+	background-color: rgb( 237, 120, 93 );
+	left: 0px;
+	top: 0px;
+	width: 1366px;
+	height: 562px;
+	z-index: 113;
+}
+/*.chart{
+  /*width: 50%;*/
+  font-size: 192.653px;
+  font-family: "ProductSans";
+  color: rgb( 212, 63, 27 );
+  font-weight: bold;
+  line-height: 1.229;
+  height: 50px;
+  left: 58.938px;
+  top: 830.414px;
+  z-index: 115;
+}*/
+/*.banner {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1366px;
+  height: 5040px;
+  z-index: 117;
+}*/
+/*.排行榜 {
+  font-size: 192.653px;
+  font-family: "Microsoft YaHei";
+  color: rgb( 251, 251, 251 );
+  line-height: 1.229;
+  -moz-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+  -webkit-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+  -ms-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+  position: absolute;
+  left: -0.653px;
+  top: 930.044px;
+  z-index: 116;
+}
+.charts {
+  font-size: 192.653px;
+  font-family: "ProductSans";
+  color: rgb( 212, 63, 27 );
+  font-weight: bold;
+  line-height: 1.229;
+  position: absolute;
+  left: 58.938px;
+  top: 830.414px;
+  z-index: 115;
+}
+
+*/
+
+
