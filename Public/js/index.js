@@ -37,7 +37,6 @@ $(document).ready(function(){
             //     $(this).dialog("close");
             // }
         },
-
     });
 }
      /*循环输出班级*/
