@@ -25,3 +25,11 @@ SQL: SELECT * FROM `tp_class`  [ RunTime:0.0003s ]
 [ 2016-11-13T15:27:35+08:00 ] ::1 /happy_class/index.php/home/index/getDanmu
 ERR: Think\Model:get_danmu方法不存在！
 
+[ 2016-11-13T18:33:48+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.1216s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0006s ]
+

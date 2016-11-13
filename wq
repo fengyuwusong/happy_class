@@ -1,0 +1,80 @@
+[33mcommit 8903f40862f7d20537d0c54a1d48329c09ff4d1a[m
+Merge: c3d337e 1e3290a
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Sun Nov 13 16:17:17 2016 +0800
+
+    Merge branch 'riqiang'
+
+[33mcommit 1e3290a0b91ca6dbd1d66737f1cefdb58390497f[m
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Sun Nov 13 16:14:30 2016 +0800
+
+    提交
+
+[33mcommit c3d337eceb13b74d5868ec974070eb40e2ea1ec7[m
+Merge: 6d5b884 7cdf4c8
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Sun Nov 13 16:08:51 2016 +0800
+
+    Merge remote-tracking branch 'refs/remotes/origin/master'
+
+[33mcommit 07b3c54e86a4dbc1cc47db1358b6ef621dd1e1ff[m
+Merge: 6d5b884 7cdf4c8
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Sun Nov 13 16:07:38 2016 +0800
+
+    Merge remote-tracking branch 'origin/master' into riqiang
+
+[33mcommit 6d5b88486bc07ae2a21ac235a92005c4002bbdd8[m
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Sun Nov 13 15:40:24 2016 +0800
+
+    新增弹幕接口，更新sql文件，记得清空表之后重新导入sql文件 分开重新导入了弹幕框架
+
+[33mcommit 7cdf4c821957be6e8f59114fe6072fe5603bff0b[m
+Author: wxiaojia <630993632@qq.com>
+Date:   Sun Nov 13 15:37:57 2016 +0800
+
+    pc
+
+[33mcommit f9803045e51c7ef6c68230a53d32d7355b057c3c[m
+Author: wxiaojia <630993632@qq.com>
+Date:   Sun Nov 13 15:28:03 2016 +0800
+
+    pc第三次提交
+
+[33mcommit fb686acce810596b8b904a6e89350a8db147971e[m
+Author: wxiaojia <630993632@qq.com>
+Date:   Sun Nov 13 14:51:57 2016 +0800
+
+    pc第二次提交
+
+[33mcommit 28dd72c0a3e3b4784b5a1523d6117db4a7357acb[m
+Author: wxiaojia <630993632@qq.com>
+Date:   Sun Nov 13 14:25:18 2016 +0800
+
+    pc界面第一次提交
+
+[33mcommit b0bf33153a3a6d09d890a62500b0b1812f96913c[m
+Author: wxiaojia <630993632@qq.com>
+Date:   Sun Nov 13 10:52:27 2016 +0800
+
+    fullpage
+
+[33mcommit 04f2d246e81c8a4e86f8d497d5ae3b344a4a7226[m
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Fri Nov 11 21:21:26 2016 +0800
+
+    添加了简单的投票
+
+[33mcommit 1c3a945253d4cbd88d8e42a5bee0694e1a08922d[m
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Thu Nov 10 22:47:38 2016 +0800
+
+    增加视频功能
+
+[33mcommit 3de0c565593a51db8fba27caf6d0c817fd617bc5[m
+Author: 风雨雾凇 <602766695@qq.com>
+Date:   Wed Nov 9 00:32:13 2016 +0800
+
+    第一次提交
