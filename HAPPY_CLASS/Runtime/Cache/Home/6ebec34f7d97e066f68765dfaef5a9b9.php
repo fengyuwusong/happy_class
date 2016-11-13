@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>快乐班级</title>
-	<link rel="stylesheet" href="/happy_class/Publiccss/jquery.fullPage.css">
+	<!-- <link rel="stylesheet" href="/happy_class/Publiccss/jquery.fullPage.css"> -->
 	<link rel="stylesheet" type="text/css" href="/happy_class/Public/css/index1.css">
 	<!-- // <script type="text/javascript" src="/happy_class/Public/js/index.js"></script> -->
 	<!-- // <script type="text/javascript" src="/happy_class/Public/danmu/dist/js/danmuplayer.min.js"></script> -->
@@ -12,30 +12,74 @@
 	<!-- // <script type="text/javascript" src="/happy_class/Public/js/jquery-ui-1.10.4.custom.min.js"></script> -->
 </head>
 <body>
-	<div id="fullpage">
-    <div class="section">第一屏</div>
-    <div class="section">第二屏</div>
-    <div class="section">
-        <div class="slide">第三屏的第一屏</div>
-        <div class="slide">第三屏的第二屏</div>
-        <div class="slide">第三屏的第三屏</div>
-        <div class="slide">第三屏的第四屏</div>
-    </div>
-    <div class="section">第四屏</div>
-</div>
-<script type="text/javascript" src="/happy_class/Public/js/jquery-1.11.1.min.js"></script>
-<script src="/happy_class/Public/js/fullPage.js"></script>
-
-<script type="text/javascript">
-    $('#fullpage').fullpage({
-        'verticalCentered': false,
-        'css3': true,
-        'sectionsColor': ['#254875', '#00FF00', '#254587', '#695684'],
-        anchors: ['page1', 'page2', 'page3', 'page4'],
-        'navigation': true,
-        'navigationPosition': 'right',
-        'navigationTooltips': ['fullPage.js', 'Powerful', 'Amazing', 'Simple']
-})
-</script>
+	<div class="banner">
+		<div class="list"></div>
+		<div class="charts"><span>charts</span>
+		<span class="rank">排行榜</span></div>
+	</div>
+	<div class="vote">
+		<div class="xy">
+			<img src="/happy_class/Public/image/vote.jpg" alt="">
+			<div class="voted_classes">
+				<div class="voted_class">15软件2班</div>
+				<!-- <div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div>
+				<div class="voted_class">15软件2班</div> -->
+			</div>
+		</div>
+		<div class="offer">*投票数据由星空学生创新中心统计</div>
+	</div>
+	<div class="vote">
+		<div class="votespan"><span>vote</span></div>
+		<span class="classrank">班级投票</span>
+		<div id="classes">
+			<div id="class1" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class2" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class3" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class4" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class5" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class6" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class7" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class8" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class9" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		    <div id="class10" class="class">
+                <!-- <div class="pic"><img  id="cover1" style="width:160px;height:200px;"></div> -->
+		    	<!-- <div id="dialog-form" title="" style="display:none;">        -->
+		    </div>
+		</div>
+	</div>
 </body>
 </html>
