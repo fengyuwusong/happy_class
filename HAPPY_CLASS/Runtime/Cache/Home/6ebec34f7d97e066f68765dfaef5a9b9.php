@@ -15,8 +15,10 @@
 <div id="bg">
 	<div class="banner">
 		<div class="list"></div>
-		<div class="charts"><span>charts</span>
-		<span class="rank">排行榜</span></div>
+		<div class="charts">
+			<span class="char">charts</span>
+			<span class="rank">排行榜</span>
+		</div>
 	</div>
 	<div class="vote">
 		<div class="xy">
@@ -37,6 +39,8 @@
 		<div class="offer">*投票数据由星空学生创新中心统计</div>
 	</div>
 	<div class="vote">
+		<div class="vote"><span>charts</span>
+		<span class="rank">排行榜</span></div>
 		<div id="classes">
 			<div id="class1" class="class">
 				<div class="pic">

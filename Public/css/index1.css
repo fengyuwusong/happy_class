@@ -25,6 +25,39 @@
 	font-weight: bold;
 	line-height: 1.229;
 	z-index: 115;
+}
+.rank {
+	float: left;
+	font-size: 198.653px;
+	font-weight: initial;
+	font-family: "Microsoft YaHei";
+	color: rgb( 251, 251, 251 );
+	line-height: 1.229;
+	-moz-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+	-webkit-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+	-ms-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+	z-index: 116;
+	Opacity:50;
+	margin-top:-146px;
+	margin-left: 12%;
+}
+.xy{
+	clear: both;
+	width: 76%;
+	margin:0 auto;
+/*	margin-top:27%;
+*/}
+.xy img{
+	width:100%;
+}
+.charts {
+	width: 50%;
+	font-size: 192.653px;
+	font-family: "ProductSans";
+	color: rgb( 212, 63, 27 );
+	font-weight: bold;
+	line-height: 1.229;
+	z-index: 115;
 	text-align: center;
 }
 .rank {
@@ -41,11 +74,6 @@
 	Opacity:50;
 	margin-top:-146px;
 }
-.xy{
-	width: 76%;
-	margin:0 auto;
-/*	margin-top:27%;
-*/}
 .voted_classes{
 	width: 23px;
 }
@@ -154,3 +182,7 @@
 	z-index: -1;
 	background-color: red;
  }
+.char{
+	display: inline-block;
+	margin-left: 21%;
+}
