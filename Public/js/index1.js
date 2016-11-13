@@ -1,6 +1,5 @@
 $(document).ready(function(){
-	$("#hide").on("click",function(e){
-		$("#hide").show();
+	$(".pic").on("click",function(e){
+		$("#hide").css({"z-index":" 10","display"})
 	})
-
 })
