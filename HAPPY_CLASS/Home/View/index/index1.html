@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>快乐班级</title>
-	<!-- <link rel="stylesheet" href="__PUBLIC__css/jquery.fullPage.css"> -->
+	<!-- <link rel="stylesheet" href="__PUBLIC__/css/jquery.fullPage.css"> -->
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index1.css">
 	<!-- // <script type="text/javascript" src="__PUBLIC__/js/index.js"></script> -->
 	<!-- // <script type="text/javascript" src="__PUBLIC__/danmu/dist/js/danmuplayer.min.js"></script> -->
@@ -37,10 +37,13 @@
 		<div class="offer">*投票数据由星空学生创新中心统计</div>
 	</div>
 	<div class="vote">
-<!-- 		<div class="votespan"><span>vote</span></div>
-		<span class="classrank">班级投票</span>
- -->		<div id="classes">
-			<div id="class1" class="class"></div>
+		<div id="classes">
+			<div id="class1" class="class">
+				<div class="pic">
+					<img  id="cover1" src="__PUBLIC__/image/pic.png" style="width:100%;height:100%;margin:0 auto;">
+				</div>
+                <div class="num"><span id="id2">14通信1班</span></div>
+			</div>
 		    <div id="class2" class="class">
 		    </div>
 		    <div id="class3" class="class">
@@ -61,6 +64,7 @@
 		    </div>
 		</div>
 	</div>
+	<div id="hide"></div>
 	<div class="rule">
 		<p>1.一个ip限投一次票</p>
 		<p>1.一个ip限投一次票</p>
