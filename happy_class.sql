@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016-11-13 15:31:45
+-- Generation Time: 2016-11-13 18:51:33
 -- 服务器版本： 10.1.8-MariaDB
 -- PHP Version: 5.4.45
 
@@ -28,10 +28,22 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `tp_back` (
   `id` int(11) NOT NULL COMMENT '主键id',
-  `class_name` varchar(30) NOT NULL COMMENT '投票的班级名称',
+  `class_id` int(3) NOT NULL COMMENT '投票的班级id',
   `time` int(11) NOT NULL COMMENT '上一次统计的投票时间',
   `num` int(11) NOT NULL COMMENT '上一次的票数 '
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='返回时间点的表';
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `tp_button`
+--
+
+CREATE TABLE IF NOT EXISTS `tp_button` (
+  `id` int(11) NOT NULL,
+  `name` varchar(30) NOT NULL,
+  `num` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -67,17 +79,17 @@ INSERT INTO `tp_class` (`id`, `name`, `info`, `cover`, `image`, `video`, `num`) 
 CREATE TABLE IF NOT EXISTS `tp_danmu` (
   `id` int(11) NOT NULL COMMENT '主键id',
   `danmu` varchar(400) NOT NULL COMMENT '弹幕json',
-  `class_name` varchar(30) NOT NULL
+  `class_id` int(11) NOT NULL
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `tp_danmu`
 --
 
-INSERT INTO `tp_danmu` (`id`, `danmu`, `class_name`) VALUES
-(1, '{ "text":"测试","color":"#ffffff","size":"1","position":"0","time":118}', ''),
-(2, '{ &quot;text&quot;:&quot;测试2&quot;,&quot;color&quot;:&quot;#ffffff&quot;,&quot;size&quot;:&quot;1&quot;,&quot;position&quot;:&quot;0&quot;,&quot;time&quot;:41}', ''),
-(3, '{ &quot;text&quot;:&quot;我又好多弹幕&quot;,&quot;color&quot;:&quot;#ffffff&quot;,&quot;size&quot;:&quot;1&quot;,&quot;position&quot;:&quot;0&quot;,&quot;time&quot;:173}', '');
+INSERT INTO `tp_danmu` (`id`, `danmu`, `class_id`) VALUES
+(1, '{ "text":"测试","color":"#ffffff","size":"1","position":"0","time":118}', 0),
+(2, '{ &quot;text&quot;:&quot;测试2&quot;,&quot;color&quot;:&quot;#ffffff&quot;,&quot;size&quot;:&quot;1&quot;,&quot;position&quot;:&quot;0&quot;,&quot;time&quot;:41}', 0),
+(3, '{ &quot;text&quot;:&quot;我又好多弹幕&quot;,&quot;color&quot;:&quot;#ffffff&quot;,&quot;size&quot;:&quot;1&quot;,&quot;position&quot;:&quot;0&quot;,&quot;time&quot;:173}', 0);
 
 -- --------------------------------------------------------
 
@@ -87,7 +99,7 @@ INSERT INTO `tp_danmu` (`id`, `danmu`, `class_name`) VALUES
 
 CREATE TABLE IF NOT EXISTS `tp_people` (
   `id` int(11) NOT NULL COMMENT '主键',
-  `class_name` varchar(30) NOT NULL COMMENT '投票班级名称',
+  `class_id` int(11) NOT NULL COMMENT '投票班级名称',
   `time` int(11) NOT NULL COMMENT '投票时间戳',
   `ip` varchar(30) NOT NULL COMMENT '投票者的ip'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='记录投票人信息的表';
@@ -100,6 +112,12 @@ CREATE TABLE IF NOT EXISTS `tp_people` (
 -- Indexes for table `tp_back`
 --
 ALTER TABLE `tp_back`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tp_button`
+--
+ALTER TABLE `tp_button`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -128,6 +146,11 @@ ALTER TABLE `tp_people`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `tp_button`
+--
+ALTER TABLE `tp_button`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `tp_class`
 --
