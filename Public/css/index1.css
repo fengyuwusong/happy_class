@@ -115,10 +115,13 @@
 	padding-top:100px;
 }
 .section{
-	height: 1185px;
+	height: 800px;
 }
 .footer{
 	width: 100%;
-
+	text-align: center;
+	color: rgb( 212, 63, 27 );
+	font-size: 25px;
+	margin-bottom: 25px;
 }
 
