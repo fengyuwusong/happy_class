@@ -16,12 +16,9 @@ class ClassModel extends Model{
      * image 宣传图token url
      * video 视频token url
      */
-    public function addClass($name,$info,$cover,$image,$video){
+    public function addClass($name,$info){
         $add['name']=$name;
         $add['info']=$info;
-        $add['cover']=$cover;
-        $add['image']=$image;
-        $add['video']=$video;
         $class=M('class');
         $class->add($add);
     }

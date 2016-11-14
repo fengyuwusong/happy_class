@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2016-11-13 18:51:33
+-- Generation Time: 2016-11-14 22:26:40
 -- 服务器版本： 10.1.8-MariaDB
 -- PHP Version: 5.4.45
 
@@ -55,20 +55,24 @@ CREATE TABLE IF NOT EXISTS `tp_class` (
   `id` int(11) NOT NULL COMMENT '唯一id',
   `name` varchar(30) NOT NULL COMMENT '班级名称',
   `info` text NOT NULL COMMENT '班级介绍',
-  `cover` varchar(100) NOT NULL,
-  `image` varchar(100) NOT NULL,
-  `video` varchar(100) NOT NULL,
   `num` int(11) NOT NULL COMMENT '票数'
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 --
 -- 转存表中的数据 `tp_class`
 --
 
-INSERT INTO `tp_class` (`id`, `name`, `info`, `cover`, `image`, `video`, `num`) VALUES
-(2, '软件一般', '4545', 'http://oga3de3p0.bkt.clouddn.com/FmLpplRxhEsmt_q1nCbT4lyUOdib', 'http://oga3de3p0.bkt.clouddn.com/FgtXXppVedigRpgGFHouNHuXX61r', 'http://oga3de3p0.bkt.clouddn.com/lh9KDdhuc_hLI1N9UN4_cfdKqpDX', 1),
-(3, '软件二班', '1245', 'http://oga3de3p0.bkt.clouddn.com/FoaB0n6NzOnsHHskfyaxrg_r311b', 'http://oga3de3p0.bkt.clouddn.com/FoFLPAq2gsnHnKiUk9aA0oGY3Do_', 'http://oga3de3p0.bkt.clouddn.com/FhMdSu7hzr8jGjhzhOyb0cmWYmdg', 0),
-(4, '软件三班', '4545', 'http://oga3de3p0.bkt.clouddn.com/FsG-9CPEBZYicCNWHp6gpO9xyHSv', 'http://oga3de3p0.bkt.clouddn.com/Fv19pyzcNnhU9Wjqic710oSq50UX', 'http://oga3de3p0.bkt.clouddn.com/lhsHNomlWxOwscLM3K_JV_NaMi7D', 0);
+INSERT INTO `tp_class` (`id`, `name`, `info`, `num`) VALUES
+(1, '1班', '//回调函数，当异步执行完了之后执行该方法//回调函数，当异步执行完了之后执行该方法', 0),
+(2, '软件二班', '//回调函数，当异步执行完了之后执行该方法', 0),
+(3, '计算机科学与技术3班', '计算机科学与技术3班计算机科学与技术3班计算机科学与技术3班', 0),
+(4, '软件4班', '软件4班软件4班软件4班软件4班', 0),
+(5, '电气5班', '电气5班电气5班电气5班', 0),
+(6, '通信6班', '我是班级信息！我是班级信息！我是班级信息！我是班级信息！', 0),
+(7, '营销7班', '我是班级信息！我是班级信息！我是班级信息！', 0),
+(8, '网络8班', '我是班级信息！我是班级信息！我是班级信息！我是班级信息！', 0),
+(9, '我是9班', '我是班级信息！我是班级信息！我是班级信息！', 0),
+(10, '最后一个', '我是10班我是班级信息！我是班级信息！', 0);
 
 -- --------------------------------------------------------
 
@@ -80,16 +84,7 @@ CREATE TABLE IF NOT EXISTS `tp_danmu` (
   `id` int(11) NOT NULL COMMENT '主键id',
   `danmu` varchar(400) NOT NULL COMMENT '弹幕json',
   `class_id` int(11) NOT NULL
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
---
--- 转存表中的数据 `tp_danmu`
---
-
-INSERT INTO `tp_danmu` (`id`, `danmu`, `class_id`) VALUES
-(1, '{ "text":"测试","color":"#ffffff","size":"1","position":"0","time":118}', 0),
-(2, '{ &quot;text&quot;:&quot;测试2&quot;,&quot;color&quot;:&quot;#ffffff&quot;,&quot;size&quot;:&quot;1&quot;,&quot;position&quot;:&quot;0&quot;,&quot;time&quot;:41}', 0),
-(3, '{ &quot;text&quot;:&quot;我又好多弹幕&quot;,&quot;color&quot;:&quot;#ffffff&quot;,&quot;size&quot;:&quot;1&quot;,&quot;position&quot;:&quot;0&quot;,&quot;time&quot;:173}', 0);
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -126,8 +121,6 @@ ALTER TABLE `tp_button`
 ALTER TABLE `tp_class`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`),
-  ADD UNIQUE KEY `image_origin` (`cover`),
-  ADD UNIQUE KEY `video` (`video`),
   ADD UNIQUE KEY `id` (`id`);
 
 --
@@ -155,12 +148,12 @@ ALTER TABLE `tp_button`
 -- AUTO_INCREMENT for table `tp_class`
 --
 ALTER TABLE `tp_class`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '唯一id',AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '唯一id',AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `tp_danmu`
 --
 ALTER TABLE `tp_danmu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id',AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键id';
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

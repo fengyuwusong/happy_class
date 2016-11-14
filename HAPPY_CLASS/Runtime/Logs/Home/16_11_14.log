@@ -1049,3 +1049,277 @@ SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0447s ]
 SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0172s ]
 SQL: SELECT * FROM `tp_class`  [ RunTime:0.0013s ]
 
+[ 2016-11-14T20:11:06+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0013s ]
+
+[ 2016-11-14T20:11:09+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0008s ]
+
+[ 2016-11-14T20:11:10+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0009s ]
+
+[ 2016-11-14T20:11:12+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0004s ]
+
+[ 2016-11-14T20:11:16+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0002s ]
+
+[ 2016-11-14T20:41:46+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0002s ]
+
+[ 2016-11-14T21:42:29+08:00 ] ::1 /happy_class/index.php/Home/Admin/upload.html
+ERR: 非法操作:upload
+
+[ 2016-11-14T21:47:46+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+
+[ 2016-11-14T21:48:34+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0018s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfy','dfty') [ RunTime:0.0003s ]
+
+[ 2016-11-14T21:50:28+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001888s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0026s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfy','dftydf') [ RunTime:0.0004s ]
+
+[ 2016-11-14T21:50:48+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0017s ]
+ERR: 1062:Duplicate entry 'dfyfy' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfy','dftydf')
+ERR: 1062:Duplicate entry 'dfyfy' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfy','dftydf')
+
+[ 2016-11-14T21:51:59+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0028s ]
+ERR: 1062:Duplicate entry 'dfyfy' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfy','dftydf')
+ERR: 1062:Duplicate entry 'dfyfy' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfy','dftydf')
+
+[ 2016-11-14T21:52:43+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001336s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0019s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfyfgh','dftydf') [ RunTime:0.0002s ]
+
+[ 2016-11-14T21:52:49+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0036s ]
+ERR: 1062:Duplicate entry 'dfyfyfgh' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfyfgh','dftydf')
+ERR: 1062:Duplicate entry 'dfyfyfgh' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('dfyfyfgh','dftydf')
+
+[ 2016-11-14T21:53:25+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0016s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('SDFgdsf','dfgsd') [ RunTime:0.0002s ]
+
+[ 2016-11-14T21:53:26+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0019s ]
+ERR: 1062:Duplicate entry 'SDFgdsf' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('SDFgdsf','dfgsd')
+ERR: 1062:Duplicate entry 'SDFgdsf' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('SDFgdsf','dfgsd')
+
+[ 2016-11-14T21:53:27+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0017s ]
+ERR: 1062:Duplicate entry 'SDFgdsf' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('SDFgdsf','dfgsd')
+ERR: 1062:Duplicate entry 'SDFgdsf' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('SDFgdsf','dfgsd')
+
+[ 2016-11-14T21:53:56+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001288s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('fghjrft','fgh') [ RunTime:0.0002s ]
+
+[ 2016-11-14T21:53:56+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0030s ]
+ERR: 1062:Duplicate entry 'fghjrft' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('fghjrft','fgh')
+ERR: 1062:Duplicate entry 'fghjrft' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('fghjrft','fgh')
+
+[ 2016-11-14T21:53:57+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0018s ]
+ERR: 1062:Duplicate entry 'fghjrft' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('fghjrft','fgh')
+ERR: 1062:Duplicate entry 'fghjrft' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`) VALUES ('fghjrft','fgh')
+
+[ 2016-11-14T22:02:31+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0055s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('sdgdf','dfgsdf') [ RunTime:0.0004s ]
+
+[ 2016-11-14T22:08:27+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-11-14T22:09:41+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0018s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('1班','//回调函数，当异步执行完了之后执行该方法//回调函数，当异步执行完了之后执行该方法') [ RunTime:0.0003s ]
+
+[ 2016-11-14T22:12:38+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0016s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('软件二班','//回调函数，当异步执行完了之后执行该方法') [ RunTime:0.0002s ]
+
+[ 2016-11-14T22:16:53+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001199s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0017s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('计算机科学与技术3班','计算机科学与技术3班计算机科学与技术3班计算机科学与技术3班') [ RunTime:0.0002s ]
+
+[ 2016-11-14T22:20:51+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0017s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('软件4班','软件4班软件4班软件4班软件4班') [ RunTime:0.0002s ]
+
+[ 2016-11-14T22:21:36+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0031s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('电气5班','电气5班电气5班电气5班') [ RunTime:0.0003s ]
+
+[ 2016-11-14T22:22:43+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0018s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('通信6班','我是班级信息！我是班级信息！我是班级信息！我是班级信息！') [ RunTime:0.0002s ]
+
+[ 2016-11-14T22:24:07+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0019s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('营销7班','我是班级信息！我是班级信息！我是班级信息！') [ RunTime:0.0002s ]
+
+[ 2016-11-14T22:24:46+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0017s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('网络8班','我是班级信息！我是班级信息！我是班级信息！我是班级信息！') [ RunTime:0.0004s ]
+
+[ 2016-11-14T22:25:32+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0035s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('我是9班','我是班级信息！我是班级信息！我是班级信息！') [ RunTime:0.0004s ]
+
+[ 2016-11-14T22:26:19+08:00 ] ::1 /happy_class/index.php/Home/Admin/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0016s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`) VALUES ('最后一个','我是10班我是班级信息！我是班级信息！') [ RunTime:0.0002s ]
+
+[ 2016-11-14T22:26:26+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001103s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0003s ]
+

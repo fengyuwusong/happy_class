@@ -1,56 +1,18 @@
 <?php
 namespace Home\Controller;
+
 use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
-        $this->display();
-    }
-     public function index1(){
+
+class IndexController extends Controller
+{
+    public function index()
+    {
         $this->display();
     }
 
-    public function admin(){
-        $cover=getQiniu();//获取封面token
-        $image=getQiniu();//获取宣传图token
-        $video=getQiniu();//获取视频token
-        $this->assign('cover',$cover);
-        $this->assign('image',$image);
-        $this->assign('video',$video);
+    public function index1()
+    {
         $this->display();
-    }
-    /*
-     * 添加班级
-     * name 班级名
-     * info 班级介绍
-     * cover_key 封面key
-     * video_key 视频key
-     * image_key 宣传图key
-     */
-    public function addClass(){
-        $name=I('post.name');
-        $info=I('post.info');
-        $cover_key=I('post.cover_key');
-        $video_key=I('post.video_key');
-        $image_key=I('post.image_key');
-        $origin=I('post.origin');
-        if($name==''||$info==''||$cover_key==''||$video_key==''||$image_key==''||$origin==''){
-            $res=array(
-                'Status'=>"1",
-                'Mes'=>"参数不能为空！"
-            );
-            $this->ajaxReturn($res);
-        }else {
-            $cover = $origin . '/' . $cover_key;
-            $image = $origin . '/' . $image_key;
-            $video = $origin . '/' . $video_key;
-            $class = D('class');
-            $class->addClass($name, $info, $cover, $image, $video);
-            $res=array(
-                'Status'=>"200",
-                'Mes'=>"添加成功！"
-            );
-            $this->ajaxReturn($res);
-        }
     }
 
     /*
@@ -60,13 +22,14 @@ class IndexController extends Controller {
      * data array 数据 id 编号 name 班级名 info 班级简介 cover 代表图片url image 封面图片url video 宣传视频url
      * Status 200成功
      */
-    public function getClass(){
-        $class=D('class');
-        $data=$class->getClass();
-        $res=array(
-            'data'=>$data,
-            'Status'=>"200",
-            'Mes'=>"获取成功！"
+    public function getClass()
+    {
+        $class = D('class');
+        $data = $class->getClass();
+        $res = array(
+            'data' => $data,
+            'Status' => "200",
+            'Mes' => "获取成功！"
         );
         $this->ajaxReturn($res);
     }
@@ -76,20 +39,21 @@ class IndexController extends Controller {
      * id 被投票班级id
      * 返回
      */
-    public function vote(){
-        $id=I('post.id');
-        if($id==''){
-            $res=array(
-                'Status'=>"1",
-                'Mes'=>"参数不能为空！"
+    public function vote()
+    {
+        $id = I('post.id');
+        if ($id == '') {
+            $res = array(
+                'Status' => "1",
+                'Mes' => "参数不能为空！"
             );
             $this->ajaxReturn($res);
-        }else {
+        } else {
             $class = D('class');
             $class->vote($id);
-            $res=array(
-                'Status'=>"200",
-                'Mes'=>"投票成功！"
+            $res = array(
+                'Status' => "200",
+                'Mes' => "投票成功！"
             );
             $this->ajaxReturn($res);
         }
