@@ -36,9 +36,9 @@
 		<div class="offer">*投票数据由星空学生创新中心统计</div>
 	</div>
 	<div class="vote">
-	<div class="votes">
-		<!-- 	<span class="votespan">vote</span>
-			<span class="rank">排行榜</span> -->
+		<div class="votes">
+			<span class="votespan">vote</span>
+			<span class="tovote">班级投票</span>
 		</div>
 		<div id="classes">
 			<div id="class1" class="class">

@@ -1,0 +1,8 @@
+[ 2016-11-14T13:09:50+08:00 ] ::1 /happy_class/index.php/Home/index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013667s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0479s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0008s ]
+
