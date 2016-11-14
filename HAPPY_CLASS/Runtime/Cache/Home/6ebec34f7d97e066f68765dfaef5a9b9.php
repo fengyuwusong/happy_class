@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>快乐班级</title>
     <script type="text/javascript" src="/happy_class/Public/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/happy_class/Public/js/index.js"></script>
+    <script type="text/javascript" src="/happy_class/Public/js/index1.js"></script>
     <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/index.css">
     <script type="text/javascript" src="/happy_class/Public/danmu/dist/js/danmuplayer.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/happy_class/Public/danmu/dist/css/danmuplayer.css">
@@ -12,81 +12,6 @@
     <script type="text/javascript" src="/happy_class/Public/js/jquery-ui-1.10.4.custom.min.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
-<div id="bg">
-	<div class="banner">
-		<div class="list"></div>
-		<div class="charts">
-			<span class="char">charts</span>
-			<span class="rank">排行榜</span>
-		</div>
-	</div>
-	<div class="vote">
-		<div class="xy">
-			<img src="/happy_class/Public/image/vote.jpg" alt="">
-			<div class="voted_classes">
-				<div class="voted_class">15软件2班</div>
-				<!-- <div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div>
-				<div class="voted_class">15软件2班</div> -->
-			</div>
-		</div>
-		<div class="offer">*投票数据由星空学生创新中心统计</div>
-	</div>
-	<div class="vote">
-		<div class="votes">
-			<span class="votespan">vote</span>
-			<span class="tovote">班级投票</span>
-		</div>
-		<div id="classes">
-			<div id="class1" class="class">
-			<div class="pic">
-				<img  id="cover1" src="/happy_class/Public/image/pic.png" style="width:100%;height:100%;margin:0 auto;">
-			</div>
-            <div class="num"><span id="id2">14通信1班</span></div>
-			</div>
-		    <div id="class2" class="class">
-		    </div>
-		    <div id="class3" class="class">
-		    </div>
-		    <div id="class4" class="class">
-		    </div>
-		    <div id="class5" class="class">
-		    </div>
-		    <div id="class6" class="class">
-		    </div>
-		    <div id="class7" class="class">
-		    </div>
-		    <div id="class8" class="class">
-		    </div>
-		    <div id="class9" class="class">
-		    </div>
-		    <div id="class10" class="class">
-		    </div>
-		</div>
-	</div>
-	<div id="hide"></div>
-	<div class="rule">
-	<!-- <p>1.一个ip限投一次票</p>
-		<p>1.一个ip限投一次票</p>
-		<p>1.一个ip限投一次票</p>
-		<p>1.一个ip限投一次票</p>
-		<p>1.一个ip限投一次票</p>
-		<p>1.一个ip限投一次票</p> -->
-	</div>
-	<div class="section"></div>
-	<div class="footer">
-		Copyright&copy2006-2016星空学生创新中心</br>
-		www.xingkong.us
-	</div>
-=======
-
 <!-- background: url(../image/beijing2.jpg) no-repeat; -->
 <div id="header">
     <!-- 轮播图 -->
@@ -101,7 +26,6 @@
             <span class="arrow_right" id="next"></span>
         </div>
     </div>
->>>>>>> 24ec9a3a3da195ae523e8f95687a0fe738d71c42
 </div>
 <!-- 介绍 -->
 <div id="preface">

@@ -30,10 +30,6 @@
 .xy img{
 	width:100%;
 }
-/*charts*/
-.charts {
-	width: 50%;
-}
 /*charts文字*/
 .char{
 	width: 100%;
@@ -57,8 +53,6 @@
 	-moz-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
 	-webkit-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
 	-ms-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
-	z-index: 116;
-	Opacity:50;
 	margin-top:-146px;
 }
 /*坐标轴下10个班级*/
@@ -81,22 +75,30 @@
 	font-size: 30px;
 }
 /*vote*/
-.votes {
-	width: 50%;
-	float: right;
-}
 .votespan{
-	width: 100%;
-	position: absolute;
-	margin-right: 50px;
-	float:left;
+    float: right;
+    margin-right: 78px;
 	font-size: 192.653px;
 	font-family: "ProductSans";
 	color: rgb( 212, 63, 27 );
 	font-weight: bold;
 	line-height: 1.229;
+	position:relative;
 }
-
+/*班级投票*/
+.voteclass {
+	float: right;
+	font-size: 198.653px;
+	clear: both;
+	font-weight: initial;
+	font-family: "Microsoft YaHei";
+	color: rgb( 251, 251, 251 );
+	line-height: 1.229;
+	-moz-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+	-webkit-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+	-ms-transform: matrix( 0.79370404897576,0,0,0.79370404897576,0,0);
+	margin-top: -140px;
+}
 /*10个班级*/
 #classes{
 	clear: both;
