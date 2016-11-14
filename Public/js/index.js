@@ -7,7 +7,7 @@ function getClass() {
         data: {},
         dataType: "json",
         success: function (res) {
-            console.log(res);
+            console.log(res.data.length);
             $("#classes").html('');
             /* str='<div id="class1" class="class">'+
              '<div class="pic">'
@@ -33,6 +33,8 @@ $(document).ready(function () {
     getClass();
     $("#hide").hide();
     $(".pic").on("click", function (e) {
+        alert("fsdf")
+        
         var top = ($(window).height() - $("#hide").height()) / 2;
         var left = ($(window).width() - $("#hide").width()) / 2;
         var scrollTop = $(document).scrollTop();

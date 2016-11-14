@@ -612,3 +612,232 @@ SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0446s ]
 SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0150s ]
 SQL: SELECT * FROM `tp_class`  [ RunTime:0.0010s ]
 
+[ 2016-11-14T16:36:38+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021081s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0448s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0011s ]
+
+[ 2016-11-14T16:37:48+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014357s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0452s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0111s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('软件5班','呜啦啦啦','http://oga3de3p0.bkt.clouddn.com/FtP8U1womoBGm_EcE0d6-uv_6Yfs','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/FgrNihWP3XienAkiWwOQFArjqbjd') [ RunTime:0.0009s ]
+
+[ 2016-11-14T16:38:09+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017164s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0357s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0009s ]
+
+[ 2016-11-14T16:39:15+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014136s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0269s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0126s ]
+SQL: INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('然间','fsdfe','http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw') [ RunTime:0.0009s ]
+
+[ 2016-11-14T16:40:30+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013659s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0646s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0313s ]
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/FgrNihWP3XienAkiWwOQFArjqbjd' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('ranjainsdf','adfef','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/FgrNihWP3XienAkiWwOQFArjqbjd')
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/FgrNihWP3XienAkiWwOQFArjqbjd' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('ranjainsdf','adfef','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/FgrNihWP3XienAkiWwOQFArjqbjd')
+
+[ 2016-11-14T16:58:40+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014357s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0379s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0116s ]
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('Djfoief','sjdfowef','http://oga3de3p0.bkt.clouddn.com/Flb-INUL7JY6WHtqUOSRnUecrrso','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('Djfoief','sjdfowef','http://oga3de3p0.bkt.clouddn.com/Flb-INUL7JY6WHtqUOSRnUecrrso','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+
+[ 2016-11-14T16:58:48+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024923s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0495s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0016s ]
+
+[ 2016-11-14T16:59:07+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017659s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0359s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0111s ]
+ERR: 1062:Duplicate entry '软件5班' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('软件5班','sdfwef','http://oga3de3p0.bkt.clouddn.com/FtP8U1womoBGm_EcE0d6-uv_6Yfs','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+ERR: 1062:Duplicate entry '软件5班' for key 'name'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('软件5班','sdfwef','http://oga3de3p0.bkt.clouddn.com/FtP8U1womoBGm_EcE0d6-uv_6Yfs','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+
+[ 2016-11-14T16:59:14+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019651s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0291s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0012s ]
+
+[ 2016-11-14T16:59:18+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021110s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0353s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0017s ]
+
+[ 2016-11-14T16:59:46+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014019s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0377s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0122s ]
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_' for key 'image_origin'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('大家覅我就恶法','rgrgrg','http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_' for key 'image_origin'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('大家覅我就恶法','rgrgrg','http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+
+[ 2016-11-14T16:59:51+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017778s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0419s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0019s ]
+
+[ 2016-11-14T17:01:49+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021966s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0538s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0011s ]
+
+[ 2016-11-14T17:02:13+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015045s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0548s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0115s ]
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_' for key 'image_origin'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('附件为附件哦i','法欸啊放假额','http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_' for key 'image_origin'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('附件为附件哦i','法欸啊放假额','http://oga3de3p0.bkt.clouddn.com/Fh1qI-0OryODqScLuN3mcJ4ZxOX_','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+
+[ 2016-11-14T17:02:19+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020885s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0393s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0010s ]
+
+[ 2016-11-14T17:03:41+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021601s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0361s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0010s ]
+
+[ 2016-11-14T17:05:53+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.044395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.050026s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0871s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0011s ]
+
+[ 2016-11-14T17:06:30+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017158s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0568s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0138s ]
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('疯发疯','罚恶法饿饭','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('疯发疯','罚恶法饿饭','http://oga3de3p0.bkt.clouddn.com/Fk92IIBExQRmtjCtvF6myzs0EDz3','http://oga3de3p0.bkt.clouddn.com/FrsJLuvyLf56Y-v7u-0MNnBqP_cY','http://oga3de3p0.bkt.clouddn.com/Fh46L6hsImDIFRNq5U142D1wCKnw')
+
+[ 2016-11-14T17:06:37+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020299s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0545s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0369s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0027s ]
+
+[ 2016-11-14T17:09:35+08:00 ] ::1 /happy_class/index.php/Home/index/addClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014831s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0397s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0148s ]
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/lh9KDdhuc_hLI1N9UN4_cfdKqpDX' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('8','8','http://oga3de3p0.bkt.clouddn.com/Fici6j0WAPY9CxRQXoU5FfIoyHgL','http://oga3de3p0.bkt.clouddn.com/Fp7aaWYPN2SQqA2LXbY_3WqGU1GK','http://oga3de3p0.bkt.clouddn.com/lh9KDdhuc_hLI1N9UN4_cfdKqpDX')
+ERR: 1062:Duplicate entry 'http://oga3de3p0.bkt.clouddn.com/lh9KDdhuc_hLI1N9UN4_cfdKqpDX' for key 'video'
+ [ SQL语句 ] : INSERT INTO `tp_class` (`name`,`info`,`cover`,`image`,`video`) VALUES ('8','8','http://oga3de3p0.bkt.clouddn.com/Fici6j0WAPY9CxRQXoU5FfIoyHgL','http://oga3de3p0.bkt.clouddn.com/Fp7aaWYPN2SQqA2LXbY_3WqGU1GK','http://oga3de3p0.bkt.clouddn.com/lh9KDdhuc_hLI1N9UN4_cfdKqpDX')
+
+[ 2016-11-14T17:52:48+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022620s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0437s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0283s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0011s ]
+
+[ 2016-11-14T17:53:22+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027154s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0461s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0011s ]
+
+[ 2016-11-14T17:53:58+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022863s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0699s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0367s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0016s ]
+
+[ 2016-11-14T17:54:07+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.040448s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0712s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0011s ]
+
+[ 2016-11-14T17:54:14+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024032s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0382s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0010s ]
+
+[ 2016-11-14T17:54:29+08:00 ] ::1 /happy_class/index.php/Home/Index/getClass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023430s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0741s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `tp_class`  [ RunTime:0.0011s ]
+
