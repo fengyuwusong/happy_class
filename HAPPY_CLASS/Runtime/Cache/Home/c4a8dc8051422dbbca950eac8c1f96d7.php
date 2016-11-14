@@ -17,7 +17,7 @@
             <span class="rank">排行榜</span>
         </div>
     </div>
-    <div class="vote">
+    <div class="voted">
         <div class="xy">
             <img src="/happy_class/Public/image/vote.jpg" alt="">
             <div class="voted_classes">
@@ -36,7 +36,7 @@
         <div class="offer">*投票数据由星空学生创新中心统计</div>
     </div>
     <div class="vote">
-        <div><span  class="votespan">vote</span>
+<!--         <div><span  class="votespan">vote</span>
             <span class="voteclass">班级投票</span></div>
         <div id="classes">
             <div class="container">
@@ -48,47 +48,29 @@
                     </div>
                 </div>
             </div>
-            <!--<div id="class1" class="class">
-                <div class="pic">
-                    <img  id="cover1" src="/happy_class/Public/image/pic.png" style="width:100%;height:100%;margin:0 auto;">
-                </div>
-                <div class="num"><span id="id2">14通信1班</span></div>
-            </div>
-            <div id="class2" class="class">
-            </div>
-            <div id="class3" class="class">
-            </div>
-            <div id="class4" class="class">
-            </div>
-            <div id="class5" class="class">
-            </div>
-            <div id="class6" class="class">
-            </div>
-            <div id="class7" class="class">
-            </div>
-            <div id="class8" class="class">
-            </div>
-            <div id="class9" class="class">
-            </div>
-            <div id="class10" class="class">
-            </div>
-        </div>-->
+            <!-- 显示班级 -->
         </div>
-        <div id="hide"></div>
-        <div class="rule">
+
+        <!-- <div id="hide"></div> -->
+      <!--   <div class="rule">
+            <div class="rules">
+                <span class="rulespan">rule</span>
+                <span class="prules">投票规则</span>
+            </div> -->
           <!--   <p>1.一个ip限投一次票</p>
             <p>1.一个ip限投一次票</p>
             <p>1.一个ip限投一次票</p>
             <p>1.一个ip限投一次票</p>
             <p>1.一个ip限投一次票</p>
-            <p>1.一个ip限投一次票</p> -->
-        </div>
-        <div class="section"></div>
-        <div class="footer">
+            <p>1.一个ip限投一次票</p>
+        </div> 
+    </div>
+        <div class="section"></div> -->
+    <!--     <div class="footer">
             Copyright&copy2006-2016星空学生创新中心</br>
             www.xingkong.us
         </div>
-    </div>
+    -->
 </body>
 <script type="text/javascript">
     var getClassUrl = "<?php echo U('Home/Index/getClass');?>";	//获取班级信息url
