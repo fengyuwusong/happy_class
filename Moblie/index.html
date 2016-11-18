@@ -60,31 +60,43 @@
 		<div class="wp-inner">
 
 			<div class="page page1">
-				<div class="js-animate animated" data-animate="bounce"></div>
-				<div class="up">
+				<!-- 上部分 -->
+				<div class="top">
 					<div class="js-animate animated left" data-animate="rotateInUpLeft"></div>
 					<div class="js-animate animated right" data-animate="rotateInUpRight"></div>
 					<div class="js-animate animated t1 title" data-animate="bounceIn"></div>
 				</div>
-
-				<div class="js-animate animated t1-5 xingkong" data-animate="lightSpeedIn"></div>
-				<div class="js-animate animated t1 xiaohui" data-animate="slideInLeft"></div>
-				<div class="fonts">
-					<div class="js-animate animated t2 font-1" data-animate="fadeInDown"></div>
-					<div class="js-animate animated t2-8 font-2" data-animate="fadeInDown"></div>
-					<div class="js-animate animated t3 font-3" data-animate="fadeInDown"></div>
+				<!-- 下部分 -->
+				<div class="bottom">
+					<!-- logo -->
+					<div class="logo">
+						<div class="js-animate animated t1-5 xingkong" data-animate="lightSpeedIn"></div>
+						<div class="js-animate animated t1 xiaohui" data-animate="slideInLeft"></div>
+					</div>
+					<!-- 文字 -->
+					<div class="fonts">
+						<div class="js-animate animated t2 font-1" data-animate="fadeInDown"></div>
+						<div class="js-animate animated t2-8 font-2" data-animate="fadeInDown"></div>
+						<div class="js-animate animated t3 font-3" data-animate="fadeInDown"></div>
+					</div>
 				</div>
+				
 			</div>
 
 			<div class="page page2">
-				<div class="js-animate animated left" data-animate="rotateInUpLeft" id="left"></div>
-
-				<div class="js-animate animated t1 font-4" data-animate="fadeInDown"></div>
-				<div class="js-animate animated t1-5 font-5" data-animate="fadeInDown"></div>
-
-				<div class="js-animate animated right" data-animate="rotateInUpRight" id="right"></div>
-
-
+				<div class="js-animate animated title2" data-animate="pulse"></div>
+				<div class="js-animate animated kuangkuang" data-animate="flash">
+					<div class="js-animate animated t1 shipin" data-animate="fadeInDown"></div>
+					<div class="js-animate animated t1-5 xianchang" data-animate="fadeInDown"></div>
+				</div>
+				<!-- 下部分 -->
+				<div class="bottom">
+					<!-- logo -->
+					<div class="logo">
+						<div class="js-animate animated t1-5 xingkong" data-animate="lightSpeedIn"></div>
+						<div class="js-animate animated t1 xiaohui" data-animate="slideInLeft"></div>
+					</div>
+				</div>
 			</div>
 			
 			<div class="page page3">
@@ -153,22 +165,24 @@
 				<div class="footer">
 					<h3>开发人员：</h3>
 					<ul class="coder">
+						<li><span>宿疯</span></li>
 						<li><span>钟涛</span></li>
+						<li><span>黄韬</span></li>
+						<li><span>嘉乐</span></li>
 						<li><span>钟涛</span></li>
-						<li><span>钟涛</span></li>
-						<li><span>钟涛</span></li>
-						<li><span>钟涛</span></li>
-						<li><span>钟涛</span></li>
-						<li><span>钟涛</span></li>
-						<li><span>钟涛</span></li>
+						<li><span>晓佳</span></li>
+						<li><span>日强</span></li>
+						<li><span>韵兴</span></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
 	<span class="start"><b></b></span>
+	
 	<script src="js/zepto.min.js"></script>
 	<script src="src/zepto.fullpage.js"></script>
+
 	<script>
 		var Bar = $('#Bar');
 		var hint = $('.hint');
@@ -202,7 +216,7 @@
                 		hint.animate({opacity:1},500);
                 	}
                 	,1600);
-				hadeHint ();
+                	hadeHint ();
                 };
 
             }
@@ -225,13 +239,10 @@
         }
         // 为条形图绑定点击事件
         Bar.find('.skillbar').on('click', function (e) {
-        		e.preventDefault();
-        		$(this).children('.skillbar-bar').removeClass('disable');
-        		$(this).siblings('.skillbar').children('.skillbar-bar').addClass('disable');
-        	});
-    </script>
-    <script type="text/javascript">
-
+        	e.preventDefault();
+        	$(this).children('.skillbar-bar').removeClass('disable');
+        	$(this).siblings('.skillbar').children('.skillbar-bar').addClass('disable');
+        });
     </script>
 </body>
 </html>

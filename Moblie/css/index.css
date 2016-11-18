@@ -1,77 +1,134 @@
-.up
+.page1 .top
 {
     position: absolute;
     top: 5px;
     left: 50%;
 
-    width: 320px;
-    margin-left: -150px;
+    width: 284px;
+    height: 246px;
+    margin-left: -142px;
 }
-
-.page1 .left
+.page1 .top .left
 {
     position: absolute;
+    top: 5px;
+    left: 0;
 
-    width: 207px;
-    height: 191.5px;
-    margin-left: 21px;
+    width: 219px;
+    height: 194px;
 
-    background: url(img/bg.png) no-repeat;
-    background-position: 0 -529px;
-    background-size: 278px 720px;
+    background: url(../images/left.png) no-repeat;
+    background-size: 219px 194px;
 }
-.page1 .right
+.page1 .top .right
 {
     position: absolute;
+    top: 52px;
+    right: 1px;
 
-    width: 207px;
-    height: 193px;
-    margin-top: 46.5px;
-    margin-left: 81.5px;
+    width: 212px;
+    height: 198px;
 
-    background: url(img/bg.png) 0 0 no-repeat;
-    background-size: 278px 720px;
+    background: url(../images/right.png) no-repeat;
+    background-size: 212px 198px;
 }
-.title
+
+.page1 .top .title
 {
-    width: 108px;
-    height: 32px;
-    margin: 105px 113px 105px 99px;
+    position: absolute;
+    left: 50%;
 
-    background: url(img/bg.png) 0 -194.5px no-repeat;
-    background-size: 278px 720px;
+    width: 106px;
+    height: 26px;
+    margin-top: 110px;
+    margin-left: -50px;
+
+    background: url(../images/title.png) no-repeat;
+    background-size: 106px 26px;
 }
 
+.bottom
+{
+    position: absolute;
+    width: 100%;
+    height: 48px;
+}
+.page1 .bottom{
+    top: 77.5%;
+}
+.page2 .bottom{
+    bottom: 5%;
+}
+.bottom .logo{
+    width: 160px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
 .xingkong
 {
     position: absolute;
-    top: 56%;
-    left: 5%;
+    left: 6%;
 
-    width: 180px;
-    height: 98px;
+    width: 85px;
+    height: 47px;
 
-    background: url(img/bg.png)  -102.5px -236px no-repeat;
-    background-size: 278px 720px;
+    background: url(../images/xingkong.png) no-repeat;
+    background-size: 85px 47px;
 }
 .xiaohui
 {
     position: absolute;
-    top: 56%;
-    right: 5%;
+    right: 6%;
 
-    width: 102.5px;
-    height: 104px;
+    width: 48px;
+    height: 48px;
 
-    background: url(img/bg.png) 0 -236px no-repeat;
-    background-size: 278px 720px;
+    background: url(../images/xiaohui.png) no-repeat;
+    background-size: 48px 48px;
 }
 .fonts
 {
+    width: 160px;
+    height: 100%;
     position: absolute;
-    top: 81%;
-    right: 5%;
+    right: 0;
 }
+
+
+.font-1
+{
+    width: 77px;
+    height: 12px;
+    position: absolute;
+    right: 6%;
+
+    background: url(../images/font1.png) no-repeat;
+    background-size: 77px 12px;
+}
+.font-2
+{
+    width: 103px;
+    height: 7px;
+    position: absolute;
+    right: 6%;
+    top: 20px;
+
+    background: url(../images/font2.png) no-repeat;
+    background-size: 103px 7px;
+}
+.font-3
+{
+    width: 111px;
+    height: 12px;
+    position: absolute;
+    right: 6%;
+    bottom: 0;
+
+    background: url(../images/font3.png) no-repeat;
+    background-size: 111px 12px;
+}
+
 @media(min-height: 480px)
 {
     #Bar
@@ -115,87 +172,57 @@
     }
 }
 
-.font-1
-{
-    width: 98px;
-    height: 15px;
-    margin-bottom: 4px;
-    margin-left: 30px;
-
-    background: url(img/bg.png) -108px -195px no-repeat;
-    background-size: 278px 720px;
-}
-.font-2
-{
-    width: 128px;
-    height: 9px;
-    margin-bottom: 4px;
-
-    background: url(img/bg.png) 0 -226px no-repeat;
-    background-size: 278px 720px;
-}
-.font-3
-{
-    width: 79px;
-    height: 15px;
-    margin-bottom: 4px;
-    margin-left: 48px;
-
-    background: url(img/bg.png) -108px -210px no-repeat;
-    background-size: 278px 720px;
-}
-
-
-.page2 .left
+.page2 .title2
 {
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: 12%;
+    left: 50%;
+    margin-left: -71px;
 
-    width: 207px;
-    height: 191.5px;
+    width: 142px;
+    height: 34px;
 
-    background: url(img/bg.png) no-repeat;
-    background-position: 0 -529px;
-    background-size: 278px 720px;
+    background: url(../images/title2.png) no-repeat;
+    background-size: 142px 34px;
 }
-.page2 .right
+.page2 .kuangkuang
 {
     position: absolute;
-    right: 0;
-    bottom: 5px;
+    top: 50%;
+    left: 50%;
+    margin-top: -155px;
+    margin-left: -126px;
+    width: 251px;
+    height: 310px;
 
-    width: 207px;
-    height: 193px;
-
-    background: url(img/bg.png) 0 0 no-repeat;
-    background-size: 278px 720px;
+    background: url(../images/kuangkuang.png) no-repeat;
+    background-size: 251px 310px;
 }
-.page2 .font-4
+.page2 .kuangkuang .shipin
 {
     position: absolute;
-    top: 26%;
+    top: 5.5%;
     left: 50%;
 
-    width: 168px;
-    height: 69px;
-    margin-left: -84px;
+    width: 163px;
+    height: 78px;
+    margin-left: -82px;
 
-    background: url(img/bg.png) 0 -340px no-repeat;
-    background-size: 278px 720px;
+    background: url(../images/shipin.png) no-repeat;
+    background-size: 163px 78px;
 }
-.page2 .font-5
+.page2 .kuangkuang .xianchang
 {
     position: absolute;
-    bottom: 26%;
+    top: 34%;
     left: 50%;
 
-    width: 168px;
-    height: 121px;
-    margin-left: -84px;
+    width: 176px;
+    height: 190px;
+    margin-left: -88px;
 
-    background: url(img/bg.png) 0 -408px no-repeat;
-    background-size: 278px 720px;
+    background: url(../images/xianchang.png) no-repeat;
+    background-size: 176px 190px;
 }
 
 .skillbar-bar1
@@ -261,33 +288,46 @@
     width: 100%;
     height: 168px;
 }
-.footer h3{
-	margin: 0;
-	padding: 0;
-	text-align: left;
-	color: #fff;
-	font-family: "微软雅黑";
-	font-weight: lighter;
-	text-indent: 8%;
+.footer h3
+{
+    font-family: '微软雅黑';
+    font-weight: lighter;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+    text-indent: 8%;
+
+    color: #fff;
 }
-.footer ul{
-	margin: 0 auto;
-	padding: 0;
-	width: 300px;
+.footer ul
+{
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
 }
-.footer ul li{
-	float: left;
-	list-style-type: none;
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
-	margin: 8px 12px;
-	background: #F22613;
+.footer ul li
+{
+    float: left;
+
+    width: 50px;
+    height: 50px;
+    margin: 8px 12px;
+
+    list-style-type: none;
+
+    border-radius: 50%;
+    background: #f22613;
+/*    background: #1BA39C;*/
 }
-.footer ul li span{
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	color: #fff;
-	font-family: "微软雅黑";
+.footer ul li span
+{
+    font-family: '微软雅黑';
+    line-height: 50px;
+
+    width: 50px;
+    height: 50px;
+
+    color: #fff;
 }

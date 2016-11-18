@@ -11,7 +11,20 @@
     position: relative;
     background: rgba(0,0,0,0.8);
 }
-
+.page1{
+    background: url(../images/bg1.jpg);
+    background-size: cover;
+}
+.page2{
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+}
+.page3{
+    background: #1BA39C;
+}
+.page4{
+    background: #19B5FE;
+}
 /* 箭头 */
 @-webkit-keyframes start {
     0%,30% {
