@@ -1,0 +1,293 @@
+.up
+{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+
+    width: 320px;
+    margin-left: -150px;
+}
+
+.page1 .left
+{
+    position: absolute;
+
+    width: 207px;
+    height: 191.5px;
+    margin-left: 21px;
+
+    background: url(img/bg.png) no-repeat;
+    background-position: 0 -529px;
+    background-size: 278px 720px;
+}
+.page1 .right
+{
+    position: absolute;
+
+    width: 207px;
+    height: 193px;
+    margin-top: 46.5px;
+    margin-left: 81.5px;
+
+    background: url(img/bg.png) 0 0 no-repeat;
+    background-size: 278px 720px;
+}
+.title
+{
+    width: 108px;
+    height: 32px;
+    margin: 105px 113px 105px 99px;
+
+    background: url(img/bg.png) 0 -194.5px no-repeat;
+    background-size: 278px 720px;
+}
+
+.xingkong
+{
+    position: absolute;
+    top: 56%;
+    left: 5%;
+
+    width: 180px;
+    height: 98px;
+
+    background: url(img/bg.png)  -102.5px -236px no-repeat;
+    background-size: 278px 720px;
+}
+.xiaohui
+{
+    position: absolute;
+    top: 56%;
+    right: 5%;
+
+    width: 102.5px;
+    height: 104px;
+
+    background: url(img/bg.png) 0 -236px no-repeat;
+    background-size: 278px 720px;
+}
+.fonts
+{
+    position: absolute;
+    top: 81%;
+    right: 5%;
+}
+@media(min-height: 480px)
+{
+    #Bar
+    {
+        top: -2%;
+    }
+}
+@media(min-height: 560px)
+{
+    .up
+    {
+        top: 30px;
+    }
+    #Bar
+    {
+        top: 5%;
+    }
+}
+@media(min-width: 360px)
+{
+    .up
+    {
+        top: 40px;
+    }
+    #left
+    {
+        top: 6%;
+        left: 4%;
+    }
+    #right
+    {
+        right: 4%;
+        bottom: 6%;
+    }
+}
+@media(min-width: 400px)
+{
+    .up
+    {
+        top: 50px;
+    }
+}
+
+.font-1
+{
+    width: 98px;
+    height: 15px;
+    margin-bottom: 4px;
+    margin-left: 30px;
+
+    background: url(img/bg.png) -108px -195px no-repeat;
+    background-size: 278px 720px;
+}
+.font-2
+{
+    width: 128px;
+    height: 9px;
+    margin-bottom: 4px;
+
+    background: url(img/bg.png) 0 -226px no-repeat;
+    background-size: 278px 720px;
+}
+.font-3
+{
+    width: 79px;
+    height: 15px;
+    margin-bottom: 4px;
+    margin-left: 48px;
+
+    background: url(img/bg.png) -108px -210px no-repeat;
+    background-size: 278px 720px;
+}
+
+
+.page2 .left
+{
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    width: 207px;
+    height: 191.5px;
+
+    background: url(img/bg.png) no-repeat;
+    background-position: 0 -529px;
+    background-size: 278px 720px;
+}
+.page2 .right
+{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+
+    width: 207px;
+    height: 193px;
+
+    background: url(img/bg.png) 0 0 no-repeat;
+    background-size: 278px 720px;
+}
+.page2 .font-4
+{
+    position: absolute;
+    top: 26%;
+    left: 50%;
+
+    width: 168px;
+    height: 69px;
+    margin-left: -84px;
+
+    background: url(img/bg.png) 0 -340px no-repeat;
+    background-size: 278px 720px;
+}
+.page2 .font-5
+{
+    position: absolute;
+    bottom: 26%;
+    left: 50%;
+
+    width: 168px;
+    height: 121px;
+    margin-left: -84px;
+
+    background: url(img/bg.png) 0 -408px no-repeat;
+    background-size: 278px 720px;
+}
+
+.skillbar-bar1
+{
+    background: #e67e22;
+}
+.skillbar-bar2
+{
+    background: #3498db;
+}
+.skillbar-bar3
+{
+    background: #f1a9a0;
+}
+.skillbar-bar4
+{
+    background: #5a68a5;
+}
+.skillbar-bar5
+{
+    background: #fde3a7;
+}
+.skillbar-bar6
+{
+    background: #2ecc71;
+}
+.skillbar-bar7
+{
+    background: #4288d0;
+}
+.skillbar-bar8
+{
+    background: #bf55ec;
+}
+.skillbar-bar9
+{
+    background: #a2ded0;
+}
+.skillbar-bar0
+{
+    background: #19b5fe;
+}
+
+.page3 .bar .disable
+{
+    background: #dedfe0;
+}
+
+.btn
+{
+    width: 100%;
+    height: 30px;
+
+    border-radius: 3px;
+    background: #eee;
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 168px;
+}
+.footer h3{
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-weight: lighter;
+	text-indent: 8%;
+}
+.footer ul{
+	margin: 0 auto;
+	padding: 0;
+	width: 300px;
+}
+.footer ul li{
+	float: left;
+	list-style-type: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin: 8px 12px;
+	background: #F22613;
+}
+.footer ul li span{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-family: "微软雅黑";
+}
