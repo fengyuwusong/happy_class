@@ -1,0 +1,344 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>快乐班级投票页</title>
+    <link rel="stylesheet" href="/happy_class/Public/css/global.css">
+    <link rel="stylesheet" href="/happy_class/Public/css/zepto.fullpage.css">
+    <link rel="stylesheet" href="/happy_class/Public/css/animate.css">
+    <link rel="stylesheet" href="/happy_class/Public/css/animations.css">
+    <link rel="stylesheet" href="/happy_class/Public/css/index_moblie.css">
+    <link rel="stylesheet" href="/happy_class/Public/css/style.css" media="screen" type="text/css"/>
+</head>
+<style>
+    .t1 {
+        animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -webkit-animation-delay: 1s;
+    }
+
+    .t1-5 {
+        animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        -webkit-animation-delay: 1.5s;
+    }
+
+    .t2 {
+        animation-delay: 2s;
+        -moz-animation-delay: 2s;
+        -webkit-animation-delay: 2s;
+    }
+
+    .t2-5 {
+        animation-delay: 2.5s;
+        -moz-animation-delay: 2.5s;
+        -webkit-animation-delay: 2.5s;
+    }
+
+    .t2-8 {
+        animation-delay: 2.8s;
+        -moz-animation-delay: 2.8s;
+        -webkit-animation-delay: 2.8s;
+    }
+
+    .t3 {
+        animation-delay: 3s;
+        -moz-animation-delay: 3s;
+        -webkit-animation-delay: 3s;
+    }
+
+    .t4 {
+        animation-delay: 4s;
+        -moz-animation-delay: 4s;
+        -webkit-animation-delay: 4s;
+    }
+
+    @media (max-width: 320px) {
+
+    }
+
+    .disable {
+        background: #dedfe0;
+    }
+
+    .btn {
+        border: 1px solid gray;
+        width: 100%;
+        height: 30px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #embed-captcha {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* 可自行设计实现captcha的位置大小 */
+    .popup-mobile {
+        position: relative;
+        width: 100%;
+    }
+
+    #popup-captcha-mobile {
+        position: absolute;
+        width: 260px;
+        height: 474px;
+        display: none;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        z-index: 9999;
+    }
+</style>
+<body>
+<div class="wp">
+    <div class="wp-inner">
+
+        <div class="page page1">
+            <!-- 上部分 -->
+            <div class="top">
+                <div class="js-animate animated left" data-animate="rotateInUpLeft"></div>
+                <div class="js-animate animated right" data-animate="rotateInUpRight"></div>
+                <div class="js-animate animated t1 title" data-animate="bounceIn"></div>
+            </div>
+            <!-- 下部分 -->
+            <div class="bottom">
+                <!-- logo -->
+                <div class="logo">
+                    <div class="js-animate animated t1-5 xingkong" data-animate="lightSpeedIn"></div>
+                    <div class="js-animate animated t1 xiaohui" data-animate="slideInLeft"></div>
+                </div>
+                <!-- 文字 -->
+                <div class="fonts">
+                    <div class="js-animate animated t2 font-1" data-animate="fadeInDown"></div>
+                    <div class="js-animate animated t2-8 font-2" data-animate="fadeInDown"></div>
+                    <div class="js-animate animated t3 font-3" data-animate="fadeInDown"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page page2">
+            <div class="js-animate animated title2" data-animate="pulse"></div>
+            <div class="js-animate animated kuangkuang" data-animate="flash">
+                <div class="js-animate animated t1 shipin" data-animate="fadeInDown"></div>
+                <div class="js-animate animated t1-5 xianchang" data-animate="fadeInDown"></div>
+            </div>
+            <!-- 下部分 -->
+            <div class="bottom">
+                <!-- logo -->
+                <div class="logo">
+                    <div class="js-animate animated t1-5 xingkong" data-animate="lightSpeedIn"></div>
+                    <div class="js-animate animated t1 xiaohui" data-animate="slideInLeft"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page page3">
+            <div class="Bar" id="Bar">
+                <h3 style="text-align:center;">快乐班级投票页</h3>
+                <div id="classes">
+
+                </div>
+
+                <div class="popup-mobile">
+                    <input class="btn" id="popup-submit-mobile" type="button" value="确定">
+                    <!-- <div id="mask"></div> -->
+                    <div id="popup-captcha-mobile"></div>
+                </div>
+            </div>
+
+            <div class="hint"
+                 style="background:rgba(0,0,0,0.5);opacity:0;position:absolute;top:50%;margin-top:-40px;width:100%;">
+                <h4 style="text-align:center;color:#fff;">
+                    点击班级条形图可为该班级投票
+                </h4>
+            </div>
+        </div>
+
+        <div class="page page4">
+
+            <div class="footer">
+                <h3>开发人员：</h3>
+                <ul class="coder">
+                    <li><span>宿疯</span></li>
+                    <li><span>钟涛</span></li>
+                    <li><span>黄韬</span></li>
+                    <li><span>嘉乐</span></li>
+                    <li><span>钟涛</span></li>
+                    <li><span>晓佳</span></li>
+                    <li><span>日强</span></li>
+                    <li><span>韵兴</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<span class="start"><b></b></span>
+
+<script src="/happy_class/Public/js/zepto.min.js"></script>
+<script src="/happy_class/Public/JS/zepto.fullpage.js"></script>
+<script src="http://static.geetest.com/static/tools/gt.js"></script>
+
+<script>
+    function submit(){
+        alert('dfhd');
+        $('.skillbar-bar').removeClass('disable');
+        $('.skillbar').children('.skillbar-bar').addClass('disable');
+        if (flag) {
+            $("#mask, #popup-captcha-mobile").hide();
+        }
+        flag = true;
+    }
+    //获取班级方法
+    var getclass = function () {
+        $.ajax({
+            url: "<?php echo U('Home/Index/getClass');?>",
+            type: "post",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var str = '';
+                //计算票数百分比
+                var num=0;
+                for (var i = 0; i < data.data.length; i++) {
+                    num+=parseInt(data.data[i].num);
+                }
+                for (var i = 0; i < data.data.length; i++) {
+                    str+= '<div class="skillbar clearfix" data-percent="'+data.data[i].num*100/num+'%" onclick="submit()">' +
+                            '<div class="skillbar-bar skillbar-bar'+(i+1)+'"><span>'+data.data[i].name+'</span></div>' +
+                            '<div class="skill-bar-percent">'+(data.data[i].num*100/num).toFixed(2)+'%</div>' +
+                            '</div>';
+                }
+                $('#classes').html(str);
+            }
+        })
+    };
+    getclass();
+    var flag = false;
+    var Bar = $('#Bar');
+    var hint = $('.hint');
+    $('.wp-inner').fullpage({
+        change: function (e) {
+            // 移除动画属性
+            $('.page').eq(e.cur).find('.js-animate').each(function () {
+                $(this).removeClass($(this).data('animate')).hide();
+            });
+            $('.page').eq(e.cur).find('.skillbar').each(function () {
+                $(this).find('.skillbar-bar').animate({
+                    width: $(this).attr('0%')
+                }, 100);
+            });
+        },
+        afterChange: function (e) {
+            // 添加动画属性
+            $('.page').eq(e.cur).find('.js-animate')
+                    .each(function () {
+                        $(this).addClass($(this).data('animate')).show();
+                    });
+            // 添加条形图动画
+            $('.page').eq(e.cur).find('.skillbar').each(function () {
+                $(this).find('.skillbar-bar').animate({
+                    width: $(this).attr('data-percent')
+                }, 1200);
+            });
+            // 判断是否为第三页，显示提示内容。
+            if ($.fn.fullpage.getCurIndex() === 2) {
+                setTimeout(function () {
+                            hint.animate({opacity: 1}, 500);
+                        }
+                        , 1600);
+                hadeHint();
+            };
+
+        }
+    });
+    // 跳转到下一页
+    // $('.btn').on('click', function (e) {
+    // 	e.preventDefault();
+    // 	$.fn.fullpage.moveNext(true);
+    // });
+    // 点击隐藏提示
+    function hadeHint() {
+        Bar.on('click', function (e) {
+            e.preventDefault();
+            hint.css('display', 'none');
+        });
+        hint.on('click', function (e) {
+            e.preventDefault();
+            $('.hint').css('display', 'none');
+        });
+    }
+</script>
+
+<script>
+    $("#mask").click(function () {
+        $("#mask, #popup-captcha-mobile").hide();
+    });
+    $("#popup-submit-mobile").click(function () {
+        if (flag) {
+            $("#mask, #popup-captcha-mobile").show();
+        }
+    });
+    var handlerPopupMobile = function (captchaObj) {
+        // 将验证码加到id为captcha的元素里
+        captchaObj.appendTo("#popup-captcha-mobile");
+        //拖动验证成功后两秒(可自行设置时间)自动发生跳转等行为
+        captchaObj.onSuccess(function () {
+            var validate = captchaObj.getValidate();
+            $.ajax({
+                url: "<?php echo U('Home/Common/checkGeet');?>", // 进行二次验证
+                type: "post",
+                dataType: "json",
+                data: {
+                    // 二次验证所需的三个值
+                    type: "mobile",
+                    // username: $('#username3').val(),
+                    // password: $('#password3').val(),
+                    geetest_challenge: validate.geetest_challenge,
+                    geetest_validate: validate.geetest_validate,
+                    geetest_seccode: validate.geetest_seccode
+                },
+                success: function (data) {
+                    if (data && (data.status === "success")) {
+                        $.fn.fullpage.moveNext(true);
+                    } else {
+                        $(document.body).html('<h1>登录失败</h1>');
+                    }
+                }
+            });
+        });
+        // 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
+    };
+    $.ajax({
+        // 获取id，challenge，success（是否启用failback）
+        url: "<?php echo U('Home/Common/setGeet');?>" + "?type=mobile&t=" + (new Date()).getTime(),  // 加随机数防止缓存
+        type: "get",
+        dataType: "json",
+        success: function (data) {
+            // 使用initGeetest接口
+            // 参数1：配置参数
+            // 参数2：回调，回调的第一个参数验证码对象，之后可以使用它做appendTo之类的事件
+            initGeetest({
+                gt: data.gt,
+                challenge: data.challenge,
+                offline: !data.success // 表示用户后台检测极验服务器是否宕机，一般不需要关注
+                // 更多配置参数请参见：http://www.geetest.com/install/sections/idx-client-sdk.html#config
+            }, handlerPopupMobile);
+        }
+    });
+</script>
+</body>
+</html>

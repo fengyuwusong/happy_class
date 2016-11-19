@@ -96,7 +96,7 @@
        <!--      <button id="left">上一页</button>
             <button id="right">下一页</button> -->
             <!-- 左右切换 end-->
-            <div class="putvidoe" style="width:85%;height:64%;margin:0 auto;margin-top:127px;"></div>
+            <div class="putvidoe" style="width:100%;height:64%;margin:0 auto;margin-top:127px;"></div>
             <div class="classsummary"></div>
             <div class="button"></div>
             <div id='class_id' style="display:none"></div>
