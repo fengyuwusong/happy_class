@@ -2,13 +2,14 @@
 	margin:0;
 	padding: 0;
 }
+body{
+	min-width: 1349px;
+}
 /*背景*/
 #bg{
 	background: url(../image/background.jpg) no-repeat;
 	background-size: 100%;
 	height: 100%;
-	overflow-x: hidden;
-	
 }
 /*xingkong*/
 .header{
@@ -20,24 +21,21 @@
     padding-top: 13px;
 }
 /*轮播图*/
-.list{
+#lists{
 	background-color: rgb( 237, 120, 93 );
 	width: 87%;
 	height: 490px;
 	z-index: 113;
 	margin: 0 auto;
-}
-/*.banner_bg{
-	position: relative;
-	width: 1366px;
-	height: 628px;
-	margin: 0 auto;
 	overflow: hidden;
+	position: relative;
 }
+#list{ height: 400px; position: absolute; z-index: 1;}
+#list img { float: left;}
 .img{
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: 527px;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -50,21 +48,23 @@
 .img3{
 	background-image: url(../image/banner_3.png);
 }
+.arrow:hover { background-color: RGBA(0,0,0,.7);}
+#prev { left: 20px;}
+#next { right: 20px;}
 #arrow{
 	position: absolute;
 	width: 100%;
 	height: 79px;
-	top: 200px;
+	top: 305px;
 	z-index: 50;
 }
 .arrow_left{
 	position: absolute;
 	width: 51px;
-	height: 79px;
+	height:79px;
 	left: 50px;
 	background-image: url("../image/arrow_left.png");
 	cursor: pointer;
-	opacity: 0.2;
 }
 .arrow_right{
 	position: absolute;
@@ -73,15 +73,26 @@
 	right: 50px;
 	background-image: url("../image/arrow_right.png");
 	cursor: pointer;
-	opacity: 0.2;
-}*/
+}
 /*坐标部分*/
 .xy{
 	clear: both;
 	width: 76%;
-	margin:0 auto;
-/*	margin-top:27%;
+	margin-left: 12%;
+	/*	margin-top:27%;
 */}
+.left_num{
+	width: 23px;
+	/*background-color: white;*/
+	position: absolute;
+	margin-left: -20px;
+	font-size: 18px;
+	color: white;
+}
+.null,.first,.two,.third,.four{
+	text-align: right;
+	height: 20%;
+}
 /*坐标图*/
 .xy img{
 	width:100%;
@@ -112,35 +123,37 @@
 }
 .vote{
 	width:100%;
+	overflow-x:hidden;
 }
 /*坐标轴下10个班级*/
 .voted_classes{
 	width: 74%;
-	margin: -351px auto;
-	height: 800px;
+	margin: 0 auto;
+	/*height: 800px;*/
 	position: absolute;
 }
 /*所有柱子*/
-
 .column{
 	width: 30px;
-	height: 343px;
+	/*height: 354px;*/
 	/*background-color: rgb( 251, 251, 251 );*/
+	/*background-color: white;*/
 }
-.red{
+.transparent{
 	width: 30px;
-	/*height: 30px;		*/
+	background-color: transparent;
 }
 .white{
 	width: 30px;
 	/*height: 313px;*/
-	background-color: white;
+	/*	background-color: white;
+*/}
+#class{
+	margin-top: 5px;
 }
 /*一个班级*/
-.class1{
-	margin-left: 5%;
-}
 .voted_class{
+	/*background-color: blue;*/
 	font-family: "Microsoft YaHei";
 	color: rgb( 251, 251, 251 );
 	margin-left: 6%;
@@ -148,7 +161,6 @@
 	font-size: 1.8em;
 	width: 30px;
 	display: inline-block;
-   
 }
 /*星空提供*/
 .offer{
@@ -400,8 +412,8 @@
 	text-align: center;
 	color: rgb( 212, 63, 27);
 	font-size: 25px;
-	margin-top:100px;
-	margin-bottom: 15px;
+	/*margin-top:100px;*/
+	/*margin-bottom: 15px;*/
 	clear: both;
 }
 /*蓝色*/
@@ -419,8 +431,8 @@
 /*蓝色end*/
  /*隐藏层*/
  #hide{
- 	width: 52%;
- 	height: 555px;
+ 	width: 60%;
+ 	/*height: 555px;*/
  	position: absolute;
 	z-index:10;
 	background-color: #f46442;
@@ -452,7 +464,10 @@
 	height: 68px;
 	float: left;
 	text-align: center;
-	line-height: 65px;
+	/*line-height: 65px;*/
+	color:#ffffff;
+	font-size: 18px;
+	margin-top: 20px;
 	/*background-color: black;*/
 	/*padding-top:40px;
 	padding-bottom: 40px;*/
@@ -481,7 +496,7 @@
         z-index: 1002; left: 0px;     
         opacity:0.5; -moz-opacity:0.5;  
         z-index:2;   
-    }  
+}
 
 
 

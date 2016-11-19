@@ -3,7 +3,7 @@ function clickPic(cover, name, id, num, info) {
     $('#' + cover).on('click', function (e) {
         showMask();
         document.documentElement.style.overflow = 'hidden';
-        $('.putvidoe').html('<iframe src='+iframe+'?id='+id+'&name='+name+'>');
+        $('.putvidoe').html('<iframe src="'+iframe+'?id='+id+'&name='+name+'" scrolling="no" height="100%" width="60%" style="margin-left:20%">');
         var top = ($(window).height() - $("#hide").height()) / 2;
         var left = ($(window).width() - $("#hide").width()) / 2;
         var scrollTop = $(document).scrollTop();
@@ -21,7 +21,7 @@ function clickPic(cover, name, id, num, info) {
 }
 
 //获取班级信息并排版
-function getClass() {
+function getClass(xy) {
     $(".container").show();
     $.ajax({
         type: "get",
@@ -29,20 +29,8 @@ function getClass() {
         data: {},
         dataType: "json",
         success: function (res) {
-            var str = '';
-            $('.voted_classes').html('');
-            for (var i = 0; i < res.data.length; i++) {
-                var columnH = res.data[i].num / 4000 * 343;
-                var transparentH = 343 - columnH;
-                str += '<div class="voted_class class1">' +
-                    '<div class="column">' +
-                    '<div class="transparent" style="height:' + transparentH + 'px;"></div>' +
-                    '<div class="white" style="height:' + columnH + 'px;"></div></div>' +
-                    res.data[i].name +
-                    '</div>';
-            }
-            $('.voted_classes').html(str);
-            str = '';
+            // console.log(res);
+            str='';
             //添加班级排版
             $("#classes").html('');
             for (var i = 0; i < res.data.length; i++) {
@@ -54,15 +42,48 @@ function getClass() {
                     '</div>';
             }
             $("#classes").html(str);
-
             //每个班级添加点击事件
+            var index;
+            var ballot=new Array;//存储票数的数组
             for (var i = 0; i < res.data.length; i++) {
-                clickPic("cover" + i, res.data[i].name, res.data[i].id, res.data[i].num, res.data[i].info);
+                clickPic("cover" + i, res.data[i].name,res.data[i].id,res.data[i].num,res.data[i].info);
+                ballot.push(res.data[i].num);
             }
+            var max=parseInt(Math.max.apply(null, ballot));//最大值
+            var literal=75;
+            var i=parseInt(max/literal);
+            // alert(i);
+            var first=100*(i+1);
+            var two=75*(i+1);
+            var third=50*(i+1);
+            var four=25*(i+1);
+            var topnum=first;
+            $(".first").text(first);
+            $(".two").text(two);
+            $(".third").text(third);
+            $(".four").text(four);
+            // alert(position)
+            //排行榜下的班级显示
+            var str='';
+            $('.voted_classes').html('');
+            var columnH;
+            var transparentH;
+            for(var i = 0; i < res.data.length; i++){
+                columnH=res.data[i].num/(topnum/4*5)*(xy*0.985);
+                transparentH=(xy*0.985)-columnH;
+                str+='<div class="voted_class class1">'+
+                    '<div class="column">'+
+                    '<div class="transparent" style="text-align:center;line-height:'+(transparentH*2-30)+'px;height:'+transparentH+'px;">'+res.data[i].num+'</div>'+
+                    '<div class="white white'+i+'" style="height:'+columnH+'px;background-color:white;"></div></div>'+
+                    '<div id="class">'+res.data[i].name +'</div>' +
+                    '</div>';
+            }
+            // $(".white"+position).css({"background-color":"#ffff00"});
+            $('.voted_classes').html(str);
             //关闭按钮添加隐藏事件
-            $(".close").on("click", function (e) {
+            $(".close").on("click",function(e){
                 $("#hide").hide();
-                document.documentElement.style.overflow = 'visible';
+                document.documentElement.style.overflow='visible';
                 hideMask();
                 $('.putvidoe').html('');//取消弹幕插件的应用
             });
@@ -70,6 +91,7 @@ function getClass() {
         }
     });
 }
+
 //点击投票后的方法
 function vote(class_id) {
     //弹出验证框
@@ -133,11 +155,51 @@ function blue() {
     $(".blue-botton").css({"border-left": width + "px solid rgb(4,130,201)"});
 }
 $(document).ready(function () {
-    getClass();
+    //轮播图
+    var W=$(".list").width();
+    $("#list").css({"width":W*6,"left":-W});
+    $("#list img").css({"width":W});
+    var img=$('.banner a');
+    var index=0;//索引
+    $('#next').click(function(){
+        index=(index+1)%3;
+        img.eq(index).fadeIn().siblings().fadeOut();
+    });
+    $('#prev').click(function(){
+        index=(index+1)%3;
+        img.eq(index).fadeIn().siblings().fadeOut();
+    });
+    //设置定时播放
+    var playtime=2000;//banner播放间隔时间
+    play = function(){
+        img.eq(index).fadeIn().siblings().fadeOut();
+        index = (index+1)%3;
+        mytime = setTimeout(play,playtime);
+    }
+    mytime = setTimeout(play,playtime);
+    //设置鼠标放上停止播放
+    $('#banner').hover(function(){
+        clearTimeout(mytime);
+    },function(){
+        mytime = setTimeout(play,playtime);
+    });
+    //柱形图左边
+    var xyheight=$(".xy").height();
+    var windowH=$(window).height()*0.6;
+    // alert(windowH);
+    $("#hide").height(windowH);
+    // var wid=$(".class").width();
+    // alert(wid);
+    // alert(xyheight)
+    $(".left_num").css({"height":xyheight+'px'});
+    $(".voted_classes").css({"margin-top":-xyheight+'px'});
+    getClass(xyheight);
     $("#hide").hide();
     blue();
     //点击投票后触发的事件
-    $(".button").on("click", function (e) {
+    $(".button").on("click",function(e){
         vote($("#class_id").text());
     });
+
 });
+

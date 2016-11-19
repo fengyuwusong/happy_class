@@ -2,13 +2,14 @@
 <html lang="en">
 <link type="text/css" href="__PUBLIC__/css/scojs.css" rel="stylesheet">
 <link type="text/css" href="__PUBLIC__/css/colpick.css" rel="stylesheet">
+<link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<div id="danmup" style="width:100%;height:90%;margin:0 auto;top:-27px;"></div>
+<div id="danmup" style="width:100%;height:90%;margin:0 auto; margin-top: -50px;"></div>
 <div style="display: none"><span class="glyphicon" aria-hidden="true">&#xe072</span> <span class="glyphicon"
                                                                                            aria-hidden="true">&#xe073</span>
     <span class="glyphicon" aria-hidden="true">&#xe242</span> <span class="glyphicon" aria-hidden="true">&#xe115</span>
@@ -30,7 +31,7 @@
     $("#danmup").DanmuPlayer({
         src: "__PUBLIC__" + '/Uploads/{$name}/video.mp4',
         height: 380, //区域的高度
-        width: 600, //区域的宽度
+        width: "100%", //区域的宽度
         urlToGetDanmu: getDanmuUrl + '?class_id={$id}',
         urlToPostDanmu: addDanmuUrl + '?class_id={$id}'
     });
