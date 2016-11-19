@@ -193,6 +193,7 @@
 <script src="http://static.geetest.com/static/tools/gt.js"></script>
 
 <script>
+    //点击班级方法
     function submit(){
         alert('dfhd');
         $('.skillbar-bar').removeClass('disable');

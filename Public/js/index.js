@@ -3,7 +3,7 @@ function clickPic(cover, name, id, num, info) {
     $('#' + cover).on('click', function (e) {
         showMask();
         document.documentElement.style.overflow = 'hidden';
-        $('.putvidoe').html('<div id="danmup" style="width:100%;height:90%;margin:0 auto;top:-27px;"> </div> <div style="display: none"> <span class="glyphicon" aria-hidden="true">&#xe072</span> <span class="glyphicon" aria-hidden="true">&#xe073</span> <span class="glyphicon" aria-hidden="true">&#xe242</span> <span class="glyphicon" aria-hidden="true">&#xe115</span> <span class="glyphicon" aria-hidden="true">&#xe111</span> <span class="glyphicon" aria-hidden="true">&#xe096</span> <span class="glyphicon" aria-hidden="true">&#xe097</span> </div>');
+        $('.putvidoe').html('<iframe src='+iframe+'?id='+id+'&name='+name+'>');
         var top = ($(window).height() - $("#hide").height()) / 2;
         var left = ($(window).width() - $("#hide").width()) / 2;
         var scrollTop = $(document).scrollTop();
@@ -17,13 +17,6 @@ function clickPic(cover, name, id, num, info) {
         $(".classsummary").text(info);
         $(".button").text("投票");
         $("#class_id").text(id);
-        $("#danmup").DanmuPlayer({
-            src: pub + '/Uploads/' + name + '/video.mp4',
-            height: "height", //区域的高度
-            width: 600, //区域的宽度
-            urlToGetDanmu: getDanmuUrl + '?class_id=' + id,
-            urlToPostDanmu: addDanmuUrl + '?class_id=' + id
-        });
     });
 }
 
@@ -36,7 +29,6 @@ function getClass() {
         data: {},
         dataType: "json",
         success: function (res) {
-            // console.log(res);
             var str = '';
             $('.voted_classes').html('');
             for (var i = 0; i < res.data.length; i++) {

@@ -6,9 +6,6 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="__PUBLIC__/css/jquery-ui-1.10.4.custom.min.css">
-    <link type="text/css" href="__PUBLIC__/css/scojs.css" rel="stylesheet">
-    <link type="text/css" href="__PUBLIC__/css/colpick.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css">
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.css">
 </head>
 <body>
@@ -192,9 +189,8 @@
 </body>
 <script type="text/javascript">
     var getClassUrl = "{:U('Home/Index/getClass')}";	//获取班级信息url
-    var getDanmuUrl = "{:U('Home/Admin/getDanmu')}";//获取弹幕url
-    var addDanmuUrl = "{:U('Home/Admin/addDanmu')}";//添加弹幕url
     var voteUrl="{:U('Home/Index/vote')}";//投票url
+    var iframe="{:U('Home/index/danmuPlayer')}";
     var pub = "__PUBLIC__";//指向public路径
     var url_check_verify="{:U('Home/Index/check_verify')}"//验证码
 </script>

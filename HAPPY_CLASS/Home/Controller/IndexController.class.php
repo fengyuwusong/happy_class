@@ -20,6 +20,13 @@ class IndexController extends Controller
         $this->display();
     }
 
+    //danmuplayer页面
+    public function danmuPlayer($id,$name){
+        $this->assign('id',$id);
+        $this->assign('name',$name);
+        $this->display();
+    }
+
     /*
      * 获得班级信息
      * 返回

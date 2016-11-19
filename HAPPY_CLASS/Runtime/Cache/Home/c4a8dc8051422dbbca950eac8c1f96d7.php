@@ -6,9 +6,6 @@
     <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/happy_class/Public/css/jquery-ui-1.10.4.custom.min.css">
-    <link type="text/css" href="/happy_class/Public/css/scojs.css" rel="stylesheet">
-    <link type="text/css" href="/happy_class/Public/css/colpick.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/main.css">
     <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/index.css">
 </head>
 <body>
@@ -192,9 +189,8 @@
 </body>
 <script type="text/javascript">
     var getClassUrl = "<?php echo U('Home/Index/getClass');?>";	//获取班级信息url
-    var getDanmuUrl = "<?php echo U('Home/Admin/getDanmu');?>";//获取弹幕url
-    var addDanmuUrl = "<?php echo U('Home/Admin/addDanmu');?>";//添加弹幕url
     var voteUrl="<?php echo U('Home/Index/vote');?>";//投票url
+    var iframe="<?php echo U('Home/index/danmuPlayer');?>";
     var pub = "/happy_class/Public";//指向public路径
     var url_check_verify="<?php echo U('Home/Index/check_verify');?>"//验证码
 </script>
