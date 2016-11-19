@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>快乐班级</title>
-    <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="/happy_class/Public/css/jquery-ui-1.10.4.custom.min.css">
-    <link type="text/css" href="/happy_class/Public/css/scojs.css" rel="stylesheet">
-    <link type="text/css" href="/happy_class/Public/css/colpick.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/happy_class/Public/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/GitHub/happy_class/Public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/GitHub/happy_class/Public/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/GitHub/happy_class/Public/css/jquery-ui-1.10.4.custom.min.css">
+    <link type="text/css" href="/GitHub/happy_class/Public/css/scojs.css" rel="stylesheet">
+    <link type="text/css" href="/GitHub/happy_class/Public/css/colpick.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/GitHub/happy_class/Public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/GitHub/happy_class/Public/css/index.css">
 </head>
 <body>
 <div id="bg">
     <!-- banner charts 排行榜 -->
     <div class="banner">
         <div class="header">
-            <img src="/happy_class/Public/image/xklogo.png" alt="">
+            <img src="/GitHub/happy_class/Public/image/xklogo.png" alt="">
         </div>
         <div class="list">
             <!--    <div id="banner">
@@ -39,7 +39,7 @@
 
     <div class="voted">
         <div class="xy">
-            <img src="/happy_class/Public/image/vote.jpg" alt="">
+            <img src="/GitHub/happy_class/Public/image/vote.jpg" alt="">
             <div class="voted_classes">
             <!-- 排行榜下的班级显示 -->
             <!-- <div class="voted_class class1"><div class="column"><div class="red"></div>
@@ -195,17 +195,17 @@
     var getDanmuUrl = "<?php echo U('Home/Admin/getDanmu');?>";//获取弹幕url
     var addDanmuUrl = "<?php echo U('Home/Admin/addDanmu');?>";//添加弹幕url
     var voteUrl="<?php echo U('Home/Index/vote');?>";//投票url
-    var pub = "/happy_class/Public";//指向public路径
+    var pub = "/GitHub/happy_class/Public";//指向public路径
     var url_check_verify="<?php echo U('Home/Index/check_verify');?>"//验证码
 </script>
-<script type="text/javascript" src="/happy_class/Public/js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="/happy_class/Public/js/bootstrap.min.js"></script>
-<script src="/happy_class/Public/js/jquery-ui-1.10.4.custom.min.js"></script>
-<script src="/happy_class/Public/js/jquery.shCircleLoader.js"></script>
-<script src="/happy_class/Public/js/sco.tooltip.js"></script>
-<script src="/happy_class/Public/js/colpick.js"></script>
-<script src="/happy_class/Public/js/jquery.danmu.js"></script>
-<script src="/happy_class/Public/js/main.js"></script>
-<script type="text/javascript" src="/happy_class/Public/js/index.js"></script>
+<script type="text/javascript" src="/GitHub/happy_class/Public/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="/GitHub/happy_class/Public/js/bootstrap.min.js"></script>
+<script src="/GitHub/happy_class/Public/js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="/GitHub/happy_class/Public/js/jquery.shCircleLoader.js"></script>
+<script src="/GitHub/happy_class/Public/js/sco.tooltip.js"></script>
+<script src="/GitHub/happy_class/Public/js/colpick.js"></script>
+<script src="/GitHub/happy_class/Public/js/jquery.danmu.js"></script>
+<script src="/GitHub/happy_class/Public/js/main.js"></script>
+<script type="text/javascript" src="/GitHub/happy_class/Public/js/index.js"></script>
 </html>
 <!--DanmuPlayer (//github.com/chiruom/danmuplayer/) - Licensed under the MIT license-->
