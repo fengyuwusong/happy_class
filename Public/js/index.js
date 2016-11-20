@@ -186,11 +186,7 @@ $(document).ready(function () {
     //柱形图左边
     var xyheight=$(".xy").height();
     var windowH=$(window).height()*0.6;
-    // alert(windowH);
     $("#hide").height(windowH);
-    // var wid=$(".class").width();
-    // alert(wid);
-    // alert(xyheight)
     $(".left_num").css({"height":xyheight+'px'});
     $(".voted_classes").css({"margin-top":-xyheight+'px'});
     getClass(xyheight);
@@ -200,6 +196,19 @@ $(document).ready(function () {
     $(".button").on("click",function(e){
         vote($("#class_id").text());
     });
-
+    //回到顶部
+    window.onscroll = function(){
+         var clientHeight=$(window).height()
+        var scrollTop = $(document).scrollTop();
+        if(scrollTop>clientHeight){
+            $("#btn").css({"display":"block"});
+        }
+        else{
+            $("#btn").css({"display":"none"});
+        }
+     }
+    $("#btn").on("click",function(e) {
+        $("html,body").animate({scrollTop:0},300);    
+    });
 });
 
